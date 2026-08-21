@@ -1,1 +1,13 @@
 2026-08-19 16:12:52	2.5s	suspicious_knuth	OK	14842d774c45cf5cca3186514816192d	0f6206e7-127b-4f15-8cb6-a615eb650270	nextflow run hello.nf
+2026-08-19 16:24:29	-	distracted_mcnulty	-	7e298d033514f06dd4193f132115a2b6	1207f96d-87b9-4704-b6ef-de2b0109a591	nextflow run hello-modules.nf
+2026-08-19 16:24:56	3.6s	hungry_meitner	OK	7e298d033514f06dd4193f132115a2b6	db70c3dc-cc55-4f57-ac75-b46a860d97a8	nextflow run hello-modules.nf
+2026-08-21 10:57:08	3.3s	golden_wing	OK	4d1a47c01a1af5fde321ab27b7d6622c	ce7fcad2-016a-4210-9b93-f41aa5f239e3	nextflow msa-comparison.nf
+2026-08-21 10:58:29	2.1s	gloomy_ramanujan	OK	cc7d9514eb1598abf044618742350079	e764d4e7-7d60-4b52-bb25-ad59ae79139c	nextflow msa-comparison.nf
+2026-08-21 11:01:05	3.2s	extravagant_sammet	OK	0f28380d9a3ed67329498dc79a5203fe	9ebcb99d-e074-4075-90ec-737245258668	nextflow msa-comparison.nf
+2026-08-21 11:01:26	3.2s	clever_carson	OK	0f28380d9a3ed67329498dc79a5203fe	3bed9888-d7c7-4ac9-8e77-fedd56f322ba	nextflow msa-comparison.nf
+2026-08-21 11:34:22	2.6s	hungry_goldstine	OK	db01f38196884d17647f9a2edaeb78c0	902916a3-61c3-44ef-babf-03989ad1e35d	nextflow msa-comparison.nf
+2026-08-21 12:08:48	2.4s	loving_bernard	OK	88a5f997f030a96281341dc0bd35318c	4c54e29d-4d7e-4309-9d5b-207ae6421e54	nextflow msa-comparison.nf
+2026-08-21 17:39:04	2.3s	angry_meninsky	ERR	b71b2ca9960dbf84fc9ece42faeb4156	3ba0c15c-ca4d-47fc-8b25-e631ef2b4855	nextflow msa-comparison.nf
+2026-08-21 17:45:32	3.3s	grave_cuvier	OK	b71b2ca9960dbf84fc9ece42faeb4156	325e12dc-c078-4dd4-9f73-05e59be2119e	nextflow msa-comparison.nf
+2026-08-21 17:47:25	2.5s	stupefied_neumann	ERR	b71b2ca9960dbf84fc9ece42faeb4156	77e0ebbc-b4f3-4eca-b0d9-332778a8b393	nextflow msa-comparison.nf
+2026-08-21 17:53:28	2.9s	nasty_church	OK	c6dce1a27bdb3947d1ada98099d43ec0	2b441e0f-7d56-4e69-afd4-435612381aff	nextflow msa-comparison.nf
