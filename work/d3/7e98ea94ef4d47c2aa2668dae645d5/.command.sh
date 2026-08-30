@@ -1,2 +1,0 @@
-#!/bin/bash -ue
-rusty-metal /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/e2/37e272869ddd38c50abc8ba50b0580/muscle.fasta /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/d8/818b5b6bcfca2d9194b67120bf80c0/kalign.fasta /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/27/daea94bb6cd705a95fdd7ad479f76e/mafft.fasta -o rusty-metal.csv
