@@ -1,0 +1,34 @@
+
+Kalign (3.4.0)
+
+Copyright (C) 2006,2019,2020,2021,2023 Timo Lassmann
+
+This program comes with ABSOLUTELY NO WARRANTY; for details type:
+`kalign -showw'.
+This is free software, and you are welcome to redistribute it
+under certain conditions; consult the COPYING file for details.
+
+Please cite:
+  Lassmann, Timo.
+  "Kalign 3: multiple sequence alignment of large data sets."
+  Bioinformatics (2019) 
+  https://doi.org/10.1093/bioinformatics/btz795
+
+[2026-08-30 12:01:22] :     LOG : Detected DNA sequences.
+[2026-08-30 12:01:22] : WARNING : -------------------------------------------- (./lib/src/msa_op.c line 501)
+[2026-08-30 12:01:22] : WARNING : The input sequences contain gap characters:  (./lib/src/msa_op.c line 502)
+[2026-08-30 12:01:22] : WARNING : "-" :    3 found                             (./lib/src/msa_op.c line 506)
+[2026-08-30 12:01:22] : WARNING : BUT the presumably aligned sequences do not  (./lib/src/msa_op.c line 510)
+[2026-08-30 12:01:22] : WARNING : have the same length.                        (./lib/src/msa_op.c line 511)
+[2026-08-30 12:01:22] : WARNING :                                              (./lib/src/msa_op.c line 512)
+[2026-08-30 12:01:22] : WARNING : Kalign will remove the gap characters and    (./lib/src/msa_op.c line 513)
+[2026-08-30 12:01:22] : WARNING : align the sequences.                         (./lib/src/msa_op.c line 514)
+[2026-08-30 12:01:22] : WARNING : -------------------------------------------- (./lib/src/msa_op.c line 515)
+[2026-08-30 12:01:22] :     LOG : Read 3 sequences from test.fasta.
+[2026-08-30 12:01:22] :     LOG : CPU Time: 0.00u 00:00:00.00 Elapsed: 00:00:00.00
+[2026-08-30 12:01:22] :     LOG : Calculating pairwise distances
+[2026-08-30 12:01:22] :     LOG : CPU Time: 0.00u 00:00:00.00 Elapsed: 00:00:00.00
+[2026-08-30 12:01:22] :     LOG : Building guide tree.
+[2026-08-30 12:01:22] :     LOG : CPU Time: 0.00u 00:00:00.00 Elapsed: 00:00:00.00
+[2026-08-30 12:01:22] :     LOG : Aligning
+[2026-08-30 12:01:22] :     LOG : CPU Time: 0.00u 00:00:00.00 Elapsed: 00:00:00.00
