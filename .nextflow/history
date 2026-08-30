@@ -24,3 +24,9 @@
 2026-08-24 18:37:43	10.1s	infallible_kowalevski	OK	8b9e15b7d331145a4341db0a465305f9	80e08a98-f63b-42f8-bc1b-89e4b46d22df	nextflow msa-comparison.nf
 2026-08-30 11:25:55	2.7s	infallible_raman	ERR	200ea4325379a9c7ca9e64823fe75f35	3bb4f0c5-9468-4818-9ec8-19abaddb0c52	nextflow msa-comparison.nf
 2026-08-30 11:27:05	9.5s	condescending_heisenberg	OK	200ea4325379a9c7ca9e64823fe75f35	be21ba8d-16bb-4a9e-8cb9-c281d229f15e	nextflow msa-comparison.nf
+2026-08-30 11:59:43	4.3s	naughty_sanger	ERR	200ea4325379a9c7ca9e64823fe75f35	36fc3b3a-1fe3-4e16-bc50-c5782ec46831	nextflow msa-comparison.nf
+2026-08-30 12:01:21	3.6s	shrivelled_kowalevski	OK	200ea4325379a9c7ca9e64823fe75f35	9844ecb1-3288-4e87-ae85-081c70902aac	nextflow msa-comparison.nf
+2026-08-30 12:40:01	3.1s	peaceful_dalembert	ERR	200ea4325379a9c7ca9e64823fe75f35	60ff99a0-4f79-4d6f-93d9-6fbae61173d5	nextflow msa-comparison.nf
+2026-08-30 12:41:21	-	goofy_monod	-	ddc3eccde931e724a3c8223642bbac56	0ace97b7-6ef4-4b1d-9e98-75c8180d9d58	nextflow msa-comparison.nf
+2026-08-30 12:41:34	4.4s	ecstatic_yonath	OK	ddc3eccde931e724a3c8223642bbac56	a0593f82-f981-4a3a-bdbc-c2f1d238fa61	nextflow msa-comparison.nf
+2026-08-30 12:46:59	4.5s	sick_lavoisier	OK	a67c17cb868c44ce6ed391526b05f658	8d9d8126-9790-45d8-b177-6ab6da5785be	nextflow msa-comparison.nf

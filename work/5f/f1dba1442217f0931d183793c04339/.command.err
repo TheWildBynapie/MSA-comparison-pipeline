@@ -1,0 +1,26 @@
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+Traceback (most recent call last):
+  File "/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/5f/f1dba1442217f0931d183793c04339/mds.py", line 50, in <module>
+    mds2.mds_and_plot(D, points)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/non-nextflow/mds2.py", line 27, in mds_and_plot
+    plt.savefig(args.output, dpi=200)
+                ^^^^
+NameError: name 'args' is not defined
