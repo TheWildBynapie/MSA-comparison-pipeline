@@ -15,3 +15,12 @@
 2026-08-21 17:58:06	2.9s	desperate_salas	OK	c6dce1a27bdb3947d1ada98099d43ec0	edb83173-a3e8-4579-b54c-208e7d1abc6a	nextflow msa-comparison.nf --muscle_options '-consiters 3' --mafft_options linsi
 2026-08-24 15:34:31	1.6s	tender_mcnulty	OK	5073c1d09e4e6c1700824f7369326f04	666a52a5-ff8a-4d96-a040-971664bb6d66	nextflow msa-comparison.nf
 2026-08-24 15:34:57	1.8s	jolly_gutenberg	OK	5073c1d09e4e6c1700824f7369326f04	37b3ef21-7641-46cb-99c5-2f56a615c667	nextflow msa-comparison.nf
+2026-08-24 18:26:29	-	agitated_celsius	-	9a8f8765058341482195947d55113538	1d92e208-84e2-42cc-b02a-3761fd114ddd	nextflow msa-comparison.nf
+2026-08-24 18:26:49	3.2s	soggy_leibniz	ERR	bc09114a54d5fe48314c3a295cf8a1d0	e95a2d84-a1f7-4d29-8127-99fc8e6eede3	nextflow msa-comparison.nf
+2026-08-24 18:27:54	2.7s	clever_hoover	ERR	bc09114a54d5fe48314c3a295cf8a1d0	896fa679-76f8-4ba0-a333-5ca5771e4d84	nextflow msa-comparison.nf
+2026-08-24 18:32:21	3.4s	kickass_hirsch	ERR	bc09114a54d5fe48314c3a295cf8a1d0	7c7d1106-8763-4a5c-8de4-f307b9ea7524	nextflow msa-comparison.nf
+2026-08-24 18:36:23	2.6s	big_bhabha	ERR	d28ad19381144d36f31b314b7935aa44	8019e864-5506-494f-8395-638b3ef3b347	nextflow msa-comparison.nf
+2026-08-24 18:36:54	3.1s	peaceful_gilbert	ERR	d64a3e9979af5da793c56a558bf8de0c	49d5d981-6791-41f3-b113-88bbe3ada992	nextflow msa-comparison.nf
+2026-08-24 18:37:43	10.1s	infallible_kowalevski	OK	8b9e15b7d331145a4341db0a465305f9	80e08a98-f63b-42f8-bc1b-89e4b46d22df	nextflow msa-comparison.nf
+2026-08-30 11:25:55	2.7s	infallible_raman	ERR	200ea4325379a9c7ca9e64823fe75f35	3bb4f0c5-9468-4818-9ec8-19abaddb0c52	nextflow msa-comparison.nf
+2026-08-30 11:27:05	9.5s	condescending_heisenberg	OK	200ea4325379a9c7ca9e64823fe75f35	be21ba8d-16bb-4a9e-8cb9-c281d229f15e	nextflow msa-comparison.nf

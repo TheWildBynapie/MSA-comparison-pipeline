@@ -6,6 +6,8 @@ include { kalign } from './modules/aligners.nf'
 
 include { rustyMetal } from './modules/rusty-metal.nf'
 
+include { MDS } from './modules/graphing.nf'
+
 /*
 *
 */
@@ -19,7 +21,6 @@ params {
 workflow {
 
     main:
-    // emit a greeting
     mafft(params.mafft_options, params.input)
     muscle(params.muscle_options, params.input)
     kalign(params.kalign_options, params.input)
@@ -31,11 +32,14 @@ workflow {
 
     rustyMetal(alignments)
 
+    MDS(file('non-nextflow/mds.py'),rustyMetal.out)
+
     publish:
     mafft = mafft.output
     muscle = muscle.output
     kalign = kalign.output
     rustyMetal = rustyMetal.output
+    MDS = MDS.output
 }
 
 output {
@@ -53,6 +57,10 @@ output {
     }
     rustyMetal {
         path 'rusty-metal'
+        mode 'copy'
+    }
+    MDS {
+        path 'MSA_distances'
         mode 'copy'
     }
 }
