@@ -3,9 +3,9 @@ A Nextflow pipeline which runs several MSA programs on the given input .fasta, c
 
 
 # Aligner details
-| Name          | Version number | Date when that was latest | Notes |
+| Name          | Version number | Latest version as of | Notes |
 | ------------- | -------------- | ------------------------- | ----- |
-| AMAP-align    |AMAP.2.2|                           |       |
+| AMAP-align    |AMAP.2.2|30/08/2026|       |
 | Clustal Omega |1.0.3|                           |clustal.org hates me|
 | ClustalW      |2.1|30/08/2026|at least this is latest anyway lol|
 | DIALIGN-TX    |                |                           |       |
