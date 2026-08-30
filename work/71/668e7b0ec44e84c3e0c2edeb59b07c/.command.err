@@ -1,0 +1,20 @@
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/sklearn/manifold/_mds.py:185: RuntimeWarning: invalid value encountered in scalar divide
+  if ((old_stress - stress) / (sum_squared_distances / 2)) < eps:
+/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/scipy/cluster/hierarchy/_hierarchy_impl.py:2846: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0, dvw])
