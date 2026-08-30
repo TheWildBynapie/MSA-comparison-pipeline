@@ -5,6 +5,7 @@ include { muscle } from './modules/aligners.nf'
 include { kalign } from './modules/aligners.nf'
 include { t_coffee } from './modules/aligners.nf'
 include { probcons } from './modules/aligners.nf'
+include { clustalw } from './modules/aligners.nf'
 
 include { rustyMetal } from './modules/rusty-metal.nf'
 
@@ -20,6 +21,7 @@ params {
     kalign_options: String = ''
     t_coffee_options: String = ''
     probcons_options: String = ''
+    clustalw_options: String = ''
 
 }
 
@@ -31,12 +33,14 @@ workflow {
     kalign(params.kalign_options, params.input)
     t_coffee(params.t_coffee_options, params.input)
     probcons(params.probcons_options, params.input)
+    clustalw(params.clustalw_options, params.input)
 
     alignments = mafft.out
         .mix(muscle.out)
         .mix(kalign.out)
         .mix(t_coffee.out.MSA)
         .mix(probcons.out)
+        .mix(clustalw.out)
         .collect()
 
     rustyMetal(alignments)
@@ -49,6 +53,7 @@ workflow {
     kalign = kalign.output
     t_coffee = t_coffee.output.MSA
     probcons = probcons.out
+    clustalw = clustalw.output
 
     rustyMetal = rustyMetal.output
 
@@ -74,6 +79,10 @@ output {
         mode 'copy'
     }
     probcons {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    clustalw {
         path 'MSA_outputs'
         mode 'copy'
     }
