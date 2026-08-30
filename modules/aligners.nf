@@ -71,3 +71,17 @@ process probcons {
     probcons ${options} ${sequences} > probcons.fasta
     """
 }
+
+process clustalw {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'clustalw.fasta'
+
+    script:
+    """
+    clustalw ${sequences} -output=fasta ${options}
+    """
+}
