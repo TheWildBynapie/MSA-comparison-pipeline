@@ -1,0 +1,21 @@
+2026-08-24T16:26:51.840Z INFO  [rusty_metal] This is rusty-metAL version 1.0.0
+2026-08-24T16:26:51.840Z INFO  [rusty_metal] Computing the distance between the following MSAs, and writing the output to rusty-metal.csv and using 0 threads. Standardisation is on.
+2026-08-24T16:26:51.840Z INFO  [rusty_metal] > /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/2f/5e8233a6ccd869a72fee45f0503cad/kalign.fasta
+2026-08-24T16:26:51.840Z INFO  [rusty_metal] > /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ca/d3225d15816fbbdee907f0ffb362f4/muscle.fasta
+2026-08-24T16:26:51.840Z INFO  [rusty_metal] > /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/01/e600c6731e9196c5096e05294ffa22/mafft.fasta
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::msa] Reading msa file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/2f/5e8233a6ccd869a72fee45f0503cad/kalign.fasta
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::msa] Reading msa file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/01/e600c6731e9196c5096e05294ffa22/mafft.fasta
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::msa] Reading msa file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ca/d3225d15816fbbdee907f0ffb362f4/muscle.fasta
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-08-24T16:26:51.842Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-08-24T16:26:51.842Z DEBUG [rusty_metal::distance] Symmetric difference: 0/140 = 0
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] Comparison 2 complete.
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] muscle -> mafft: 0
+2026-08-24T16:26:51.842Z DEBUG [rusty_metal::distance] Symmetric difference: 0/140 = 0
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] Comparison 0 complete.
+2026-08-24T16:26:51.842Z DEBUG [rusty_metal::distance] Symmetric difference: 0/140 = 0
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] kalign -> muscle: 0
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] Comparison 1 complete.
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] kalign -> mafft: 0
+2026-08-24T16:26:51.842Z INFO  [rusty_metal] Writing output to rusty-metal.csv

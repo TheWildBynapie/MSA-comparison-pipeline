@@ -1,0 +1,4 @@
+msa_a,msa_b,distance
+/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/41/273e89d3a2e4aa106d81c0d3ef6df6/kalign.fasta,/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/58/6dffb7707b132c24c1636fe026dd7a/muscle.fasta,0
+/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/41/273e89d3a2e4aa106d81c0d3ef6df6/kalign.fasta,/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ed/3d375505235fdc472b38ffac6a65d1/mafft.fasta,0
+/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/58/6dffb7707b132c24c1636fe026dd7a/muscle.fasta,/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ed/3d375505235fdc472b38ffac6a65d1/mafft.fasta,0
