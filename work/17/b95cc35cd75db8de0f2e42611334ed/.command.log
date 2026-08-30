@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/17/b95cc35cd75db8de0f2e42611334ed/mds.py", line 46, in <module>
+    data = np.load(args.input)
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/numpy/lib/_npyio_impl.py", line 489, in load
+    raise ValueError(
+    ...<2 lines>...
+        "`allow_pickle=` keyword argument or `pickle.load()`.")
+ValueError: This file contains pickled (object) data. If you trust the file you can load it unsafely using the `allow_pickle=` keyword argument or `pickle.load()`.

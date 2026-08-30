@@ -6,7 +6,7 @@ include { kalign } from './modules/aligners.nf'
 
 include { rustyMetal } from './modules/rusty-metal.nf'
 
-include { MDS } from './modules/graphing.nf'
+include { graphs } from './modules/graphing.nf'
 
 /*
 *
@@ -32,14 +32,15 @@ workflow {
 
     rustyMetal(alignments)
 
-    MDS(file('non-nextflow/mds.py'),rustyMetal.out)
+    graphs(file('non-nextflow/make_distance_matrix.py'),rustyMetal.out)
 
     publish:
     mafft = mafft.output
     muscle = muscle.output
     kalign = kalign.output
     rustyMetal = rustyMetal.output
-    MDS = MDS.output
+    MDS = graphs.out.MDS
+    hierarchical = graphs.out.hierarchical
 }
 
 output {
@@ -60,7 +61,11 @@ output {
         mode 'copy'
     }
     MDS {
-        path 'MSA_distances'
+        path 'MSA_graphs'
+        mode 'copy'
+    }
+    hierarchical {
+        path 'MSA_graphs'
         mode 'copy'
     }
 }
