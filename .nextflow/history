@@ -39,3 +39,10 @@
 2026-08-30 14:04:22	4.6s	nauseous_shirley	ERR	416455b51406e81a73b5ea383b77d9d9	5fd5294f-707a-4c0e-98db-37d26c7d0443	nextflow msa-comparison.nf
 2026-08-30 14:05:15	7.5s	insane_sax	OK	416455b51406e81a73b5ea383b77d9d9	7a8ac8a2-fb55-43bb-a1dd-f8280bbede09	nextflow msa-comparison.nf
 2026-08-30 14:27:15	6.7s	chaotic_fermat	OK	13862e17870708572968ca6313d75c0a	b5f675a7-f5b3-4d02-a3ec-30a63c410b19	nextflow msa-comparison.nf
+2026-08-30 20:31:19	4.2s	nauseous_banach	ERR	df890b08a41eae1cc4f5e1318d791cfc	3c2a3ca0-ce8d-41f3-b135-2852c30a32c7	nextflow run msa-comparison.nf
+2026-08-30 20:31:51	3.4s	ecstatic_meucci	ERR	df890b08a41eae1cc4f5e1318d791cfc	6d766eb9-05a3-44bf-984f-a4501277ef9c	nextflow msa-comparison.nf
+2026-08-30 20:35:21	4.5s	intergalactic_tesla	ERR	df890b08a41eae1cc4f5e1318d791cfc	f1afa669-35da-4067-9a59-67d5f135ac2b	nextflow msa-comparison.nf
+2026-08-30 20:36:02	8.4s	thirsty_fourier	OK	df890b08a41eae1cc4f5e1318d791cfc	16541ca3-06ed-4463-af18-d6d57bca3331	nextflow msa-comparison.nf
+2026-08-30 20:40:10	7.8s	evil_kirch	OK	091227f0e10773eeeff976f3d20098ee	922854cd-6282-4f8c-a6fd-008549d56462	nextflow msa-comparison.nf
+2026-08-30 21:03:16	-	infallible_stallman	-	aada13e0557e3653419714ab2a43ff7f	d5f31021-fd4e-4aab-ba8a-6d7c16c97566	nextflow msa-comparison.nf
+2026-08-30 21:03:54	6.2s	sleepy_bartik	OK	aada13e0557e3653419714ab2a43ff7f	30c3441c-191a-4448-abc5-ee80f2c25588	nextflow msa-comparison.nf
