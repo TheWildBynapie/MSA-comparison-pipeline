@@ -30,3 +30,12 @@
 2026-08-30 12:41:21	-	goofy_monod	-	ddc3eccde931e724a3c8223642bbac56	0ace97b7-6ef4-4b1d-9e98-75c8180d9d58	nextflow msa-comparison.nf
 2026-08-30 12:41:34	4.4s	ecstatic_yonath	OK	ddc3eccde931e724a3c8223642bbac56	a0593f82-f981-4a3a-bdbc-c2f1d238fa61	nextflow msa-comparison.nf
 2026-08-30 12:46:59	4.5s	sick_lavoisier	OK	a67c17cb868c44ce6ed391526b05f658	8d9d8126-9790-45d8-b177-6ab6da5785be	nextflow msa-comparison.nf
+2026-08-30 13:58:51	-	cheeky_pasteur	-	18c23415d2d62c1d58525ce9a149e874	61f5be4c-5b8c-44fe-9d40-5506cc5b478a	nextflow msa-comparison.nf
+2026-08-30 13:59:52	-	deadly_rubens	-	48b4b55f529b6c66c4ce4a70cd3330a6	fad624a2-cdfc-41c6-bb08-6e0c89c45e63	nextflow msa-comparison.nf
+2026-08-30 14:00:28	2.2s	angry_banach	ERR	3bcaa05ab990aacc36b5225016ec89d6	5364f288-f1bd-4e41-b752-bd6cdb44cd13	nextflow msa-comparison.nf
+2026-08-30 14:00:50	3s	sick_northcutt	ERR	416455b51406e81a73b5ea383b77d9d9	7034f4f4-df79-491a-b177-613df3363aed	nextflow msa-comparison.nf
+2026-08-30 14:02:55	-	evil_volta	-	a47ea1deed5e40cf8154ed95be01e2cc	6b7a2174-b7b9-40a3-9a53-26fe8e3e73a8	nextflow msa-comparison.nf
+2026-08-30 14:03:42	2.8s	modest_cajal	ERR	2e058ab8f11bd53ceaa9d8c6c1deade7	9c679056-750a-4c0f-8fe7-107254815d54	nextflow msa-comparison.nf
+2026-08-30 14:04:22	4.6s	nauseous_shirley	ERR	416455b51406e81a73b5ea383b77d9d9	5fd5294f-707a-4c0e-98db-37d26c7d0443	nextflow msa-comparison.nf
+2026-08-30 14:05:15	7.5s	insane_sax	OK	416455b51406e81a73b5ea383b77d9d9	7a8ac8a2-fb55-43bb-a1dd-f8280bbede09	nextflow msa-comparison.nf
+2026-08-30 14:27:15	6.7s	chaotic_fermat	OK	13862e17870708572968ca6313d75c0a	b5f675a7-f5b3-4d02-a3ec-30a63c410b19	nextflow msa-comparison.nf
