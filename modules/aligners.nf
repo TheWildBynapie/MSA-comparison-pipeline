@@ -82,6 +82,48 @@ process clustalw {
 
     script:
     """
-    clustalw ${sequences} -output=fasta ${options}
+    clustalw ${sequences} -output=fasta -outfile=clustalw.fasta ${options}
     """
 }
+
+process clustalo {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'clustalo.fasta'
+
+    script:
+    """
+    clustalo -i ${sequences} -o clustalo.fasta ${options}
+    """
+}
+
+process amap {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'amap.fasta'
+
+    script:
+    """
+    amap ${options} ${sequences} > amap.fasta
+    """
+}
+
+// process dialign_tx {
+//     input:
+//     val options
+//     path sequences
+
+//     output:
+//     path 'dialign-tx.fasta'
+
+//     script:
+//     """
+//     dialign-tx ${options} ${sequences} dialign-tx.fasta
+//     """
+// }
