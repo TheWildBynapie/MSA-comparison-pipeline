@@ -71,3 +71,88 @@ process probcons {
     probcons ${options} ${sequences} > probcons.fasta
     """
 }
+
+process clustalw {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'clustalw.fasta'
+
+    script:
+    """
+    clustalw ${sequences} -output=fasta -outfile=clustalw.fasta ${options}
+    """
+}
+
+process clustalo {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'clustalo.fasta'
+
+    script:
+    """
+    clustalo -i ${sequences} -o clustalo.fasta ${options}
+    """
+}
+
+process amap {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'amap.fasta'
+
+    script:
+    """
+    amap ${options} ${sequences} > amap.fasta
+    """
+}
+
+// process dialign_tx {
+//     input:
+//     val options
+//     path sequences
+
+//     output:
+//     path 'dialign-tx.fasta'
+
+//     script:
+//     """
+//     dialign-tx ${options} ${sequences} dialign-tx.fasta
+//     """
+// }
+
+process prank {
+    
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'prank.fasta'
+
+    script:
+    """
+    prank -d=${sequences} -o=prank ${options} && mv prank.best.fas prank.fasta
+    """
+}
+
+process fsa {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'fsa.fasta'
+
+    script:
+    """
+    fsa ${options} ${sequences} > fsa.fasta
+    """
+}
