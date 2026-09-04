@@ -8,7 +8,7 @@ A Nextflow pipeline which runs several MSA programs on the given input .fasta, c
 | AMAP-align    |AMAP.2.2|30/08/2026|yes| |
 | Clustal Omega |1.0.3|                           | yes | clustal.org hates me|
 | ClustalW      |2.1|30/08/2026|yes|at least this is latest anyway lol|
-| DIALIGN-TX    |                |                           |no|       |
+| DIALIGN-TX    |                |                           |no|Needs a 'isDNAorProtein' detection method to be able to run automatically|
 | FSA           |1.15.9|                           |n/a|       |
 | Kalign        |3.4.0|                           |yes|need 3.5.1 as of 30/08/2026|
 | MAFFT         |v7.526|30/08/2026|yes| |
