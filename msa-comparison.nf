@@ -5,6 +5,11 @@ include { muscle } from './modules/aligners.nf'
 include { kalign } from './modules/aligners.nf'
 include { t_coffee } from './modules/aligners.nf'
 include { probcons } from './modules/aligners.nf'
+include { clustalw } from './modules/aligners.nf'
+include { clustalo } from './modules/aligners.nf'
+include { amap } from './modules/aligners.nf'
+include { prank } from './modules/aligners.nf'
+include { fsa } from './modules/aligners.nf'
 
 include { rustyMetal } from './modules/rusty-metal.nf'
 
@@ -20,6 +25,11 @@ params {
     kalign_options: String = ''
     t_coffee_options: String = ''
     probcons_options: String = ''
+    clustalw_options: String = ''
+    clustalo_options: String = ''
+    amap_options: String = ''
+    prank_options: String = ''
+    fsa_options: String = ''
 
 }
 
@@ -31,12 +41,23 @@ workflow {
     kalign(params.kalign_options, params.input)
     t_coffee(params.t_coffee_options, params.input)
     probcons(params.probcons_options, params.input)
+    clustalw(params.clustalw_options, params.input)
+    clustalo(params.clustalo_options, params.input)
+    amap(params.amap_options, params.input)
+    prank(params.prank_options, params.input)
+    fsa(params.fsa_options, params.input)
+
 
     alignments = mafft.out
         .mix(muscle.out)
         .mix(kalign.out)
         .mix(t_coffee.out.MSA)
         .mix(probcons.out)
+        .mix(clustalw.out)
+        .mix(clustalo.out)
+        .mix(amap.out)
+        .mix(prank.out)
+        .mix(fsa.out)
         .collect()
 
     rustyMetal(alignments)
@@ -49,6 +70,11 @@ workflow {
     kalign = kalign.output
     t_coffee = t_coffee.output.MSA
     probcons = probcons.out
+    clustalw = clustalw.output
+    clustalo = clustalo.output
+    amap = amap.output
+    prank = prank.output
+    fsa = fsa.output
 
     rustyMetal = rustyMetal.output
 
@@ -74,6 +100,26 @@ output {
         mode 'copy'
     }
     probcons {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    clustalw {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    clustalo {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    amap {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    prank {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    fsa {
         path 'MSA_outputs'
         mode 'copy'
     }
