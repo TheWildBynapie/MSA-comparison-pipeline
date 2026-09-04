@@ -1,0 +1,205 @@
+Sep-04 09:57:27.137 [main] DEBUG nextflow.cli.Launcher - $> nextflow msa-comparison.nf
+Sep-04 09:57:27.249 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Sep-04 09:57:27.281 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/byna/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Sep-04 09:57:27.304 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-04 09:57:27.305 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-04 09:57:27.308 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-04 09:57:27.323 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-04 09:57:27.452 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-04 09:57:27.456 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-04 09:57:27.476 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-04 09:57:27.502 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-04 09:57:27.503 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-04 09:57:27.518 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/byna/.nextflow/secrets/store.json
+Sep-04 09:57:27.526 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@203c20cf] - activable => nextflow.secret.LocalSecretsProvider@203c20cf
+Sep-04 09:57:27.541 [main] DEBUG nextflow.cli.CmdRun - Launching `msa-comparison.nf` [adoring_jepsen] - revision: efe3367f22
+Sep-04 09:57:27.619 [main] DEBUG nextflow.Session - Session UUID: f22592af-4a26-4576-8078-c54cdc1628d7
+Sep-04 09:57:27.620 [main] DEBUG nextflow.Session - Run name: adoring_jepsen
+Sep-04 09:57:27.621 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-04 09:57:27.646 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-04 09:57:27.652 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-04 09:57:27.680 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 12646
+  Created: 09-07-2026 18:49 UTC (20:49 SAST)
+  System: Linux 7.0.0-31-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.4+7-1-26.04-Ubuntu
+  Encoding: UTF-8 (UTF-8)
+  Process: 12234@byna-laptop [127.0.1.1]
+  CPUs: 16 - Mem: 6.6 GB (143.5 MB) - Swap: 4 GB (4 GB)
+Sep-04 09:57:27.697 [main] DEBUG nextflow.Session - Work-dir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work [ext2/ext3]
+Sep-04 09:57:27.698 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/bin
+Sep-04 09:57:27.706 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-04 09:57:27.715 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-04 09:57:27.716 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sep-04 09:57:27.778 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-04 09:57:27.791 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-04 09:57:27.841 [main] DEBUG nextflow.Session - Session start
+Sep-04 09:57:27.847 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sep-04 09:57:28.371 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-04 09:57:28.505 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.505 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.512 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-04 09:57:28.519 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=6.6 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-04 09:57:28.521 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-04 09:57:28.554 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'mafft': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.616 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.616 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.617 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'muscle': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.620 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.620 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.621 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'kalign': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.624 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.624 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.625 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 't_coffee': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.627 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.628 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.628 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'probcons': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.631 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.631 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.632 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'clustalw': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.635 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.635 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.636 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'clustalo': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.639 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.639 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.639 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'amap': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.642 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.642 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.643 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prank': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.686 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.686 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.687 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'rustyMetal': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.701 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 09:57:28.701 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 09:57:28.701 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'graphs': maxForks=0; fair=false; array=0
+Sep-04 09:57:28.718 [main] DEBUG nextflow.Session - Process names: clustalo, probcons, graphs, t_coffee, prank, amap, muscle, clustalw, kalign, mafft, rustyMetal
+Sep-04 09:57:28.720 [main] DEBUG nextflow.Session - Igniting dataflow network (11)
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mafft
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > muscle
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kalign
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > t_coffee
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > probcons
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > clustalw
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > clustalo
+Sep-04 09:57:28.721 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > amap
+Sep-04 09:57:28.722 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prank
+Sep-04 09:57:28.722 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > rustyMetal
+Sep-04 09:57:28.722 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > graphs
+Sep-04 09:57:28.722 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_d1cf4c1f70df0590: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/aligners.nf
+  _nf_script_4ae44bad9b627c79: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/rusty-metal.nf
+  Main: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/msa-comparison.nf
+  _nf_script_41c868422661bd93: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/graphing.nf
+Sep-04 09:57:28.722 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-04 09:57:28.722 [main] DEBUG nextflow.Session - Session await
+Sep-04 09:57:28.857 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.859 [Task submitter] INFO  nextflow.Session - [d8/6689af] Submitted process > mafft
+Sep-04 09:57:28.881 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.881 [Task submitter] INFO  nextflow.Session - [7b/0155ad] Submitted process > amap
+Sep-04 09:57:28.887 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.888 [Task submitter] INFO  nextflow.Session - [a7/7569bd] Submitted process > clustalo
+Sep-04 09:57:28.895 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.896 [Task submitter] INFO  nextflow.Session - [12/697ed8] Submitted process > prank
+Sep-04 09:57:28.905 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.909 [Task submitter] INFO  nextflow.Session - [f4/7365f7] Submitted process > kalign
+Sep-04 09:57:28.922 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.923 [Task submitter] INFO  nextflow.Session - [ef/a0eee2] Submitted process > t_coffee
+Sep-04 09:57:28.932 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.933 [Task submitter] INFO  nextflow.Session - [3e/c364d7] Submitted process > probcons
+Sep-04 09:57:28.934 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: amap; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/7b/0155ad7d86404f1fbee7c4ff896349]
+Sep-04 09:57:28.936 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-04 09:57:28.943 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.943 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: clustalo; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/a7/7569bd67e59786c26b7c02b5290adf]
+Sep-04 09:57:28.944 [Task submitter] INFO  nextflow.Session - [18/0baa9e] Submitted process > muscle
+Sep-04 09:57:28.955 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 09:57:28.956 [Task submitter] INFO  nextflow.Session - [d8/98ff28] Submitted process > clustalw
+Sep-04 09:57:28.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: kalign; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/f4/7365f732711cd0e97246edff9320b5]
+Sep-04 09:57:29.012 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: probcons; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/3e/c364d73074e99fb701d59e485078d8]
+Sep-04 09:57:29.014 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: clustalw; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/d8/98ff284735026512d73acb06c640b8]
+Sep-04 09:57:29.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: muscle; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/18/0baa9e8fbfbd196c075cd16fbbbdad]
+Sep-04 09:57:29.020 [Actor Thread 2] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-04 09:57:29.120 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: t_coffee; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ef/a0eee253802821ca6fcce233e246a4]
+Sep-04 09:57:29.164 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: mafft; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/d8/6689afe7a77638df8bb4e6aeaf35ad]
+Sep-04 09:57:29.403 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: prank; status: COMPLETED; exit: 0; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/12/697ed867654b3760d4970d0df27d5d]
+Sep-04 09:57:29.404 [TaskFinalizer-9] DEBUG n.processor.TaskFileCollector - Process `prank` is unable to find [UnixPath]: `/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/12/697ed867654b3760d4970d0df27d5d/prank.fasta` (pattern: `prank.fasta`)
+Sep-04 09:57:29.408 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=prank; work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/12/697ed867654b3760d4970d0df27d5d
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `prank.fasta` expected by process `prank`
+Sep-04 09:57:29.440 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'prank'
+
+Caused by:
+  Missing output file(s) `prank.fasta` expected by process `prank`
+
+
+Command executed:
+
+  prank -d=test_gapless.fasta -o=prank
+
+Command exit status:
+  0
+
+Command output:
+  
+  -----------------
+   PRANK v.250331:
+  -----------------
+  
+  Input for the analysis
+   - aligning sequences in 'test_gapless.fasta'
+   - using inferred alignment guide tree
+   - option '+F' is not used; it can be enabled with '+F'
+   - external tools available:
+      MAFFT for initial alignment
+      Exonerate for alignment anchoring
+  
+  Correcting (arbitrarily) for multifurcating nodes.
+  
+  Generating multiple alignment: iteration 1.
+  
+  Alignment score: 6
+  Correcting (arbitrarily) for multifurcating nodes.
+  
+  Generating multiple alignment: iteration 2.
+  
+  Alignment score: 6
+  Correcting (arbitrarily) for multifurcating nodes.
+  
+  Generating multiple alignment: iteration 3.
+  
+  Alignment score: 6
+  Correcting (arbitrarily) for multifurcating nodes.
+  
+  Generating multiple alignment: iteration 4.
+  
+  Alignment score: 6
+  Correcting (arbitrarily) for multifurcating nodes.
+  
+  Generating multiple alignment: iteration 5.
+  
+  Alignment score: 6
+  
+  
+  Writing
+   - alignment to 'prank.best.fas'
+  
+  Analysis done. Total time 1s
+
+Work dir:
+  /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/12/697ed867654b3760d4970d0df27d5d
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Sep-04 09:57:29.444 [TaskFinalizer-9] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `prank.fasta` expected by process `prank`
+Sep-04 09:57:29.458 [TaskFinalizer-9] DEBUG nextflow.Session - The following nodes are still active:
+[process] graphs
+  status=ACTIVE
+  port 0: (value) bound ; channel: main_graphing_file
+  port 1: (value) OPEN  ; channel: distance_matrix_file
+  port 2: (cntrl) -     ; channel: $
+
+Sep-04 09:57:29.467 [TaskFinalizer-9] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=8; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=517ms; failedDuration=458ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=9; peakMemory=0; ]
+Sep-04 09:57:29.503 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-04 09:57:29.657 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-04 09:57:29.657 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-04 09:57:29.659 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=8; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=517ms; failedDuration=458ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=9; peakMemory=0; ]
+Sep-04 09:57:29.665 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-04 09:57:29.680 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

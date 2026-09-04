@@ -127,3 +127,32 @@ process amap {
 //     dialign-tx ${options} ${sequences} dialign-tx.fasta
 //     """
 // }
+
+process prank {
+    
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'prank.fasta'
+
+    script:
+    """
+    prank -d=${sequences} -o=prank ${options} && mv prank.best.fas prank.fasta
+    """
+}
+
+process fsa {
+    input:
+    val options
+    path sequences
+
+    output:
+    path 'fsa.fasta'
+
+    script:
+    """
+    fsa ${options} ${sequences} > fsa.fasta
+    """
+}

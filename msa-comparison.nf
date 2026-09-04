@@ -8,6 +8,8 @@ include { probcons } from './modules/aligners.nf'
 include { clustalw } from './modules/aligners.nf'
 include { clustalo } from './modules/aligners.nf'
 include { amap } from './modules/aligners.nf'
+include { prank } from './modules/aligners.nf'
+include { fsa } from './modules/aligners.nf'
 
 include { rustyMetal } from './modules/rusty-metal.nf'
 
@@ -26,6 +28,8 @@ params {
     clustalw_options: String = ''
     clustalo_options: String = ''
     amap_options: String = ''
+    prank_options: String = ''
+    fsa_options: String = ''
 
 }
 
@@ -40,6 +44,9 @@ workflow {
     clustalw(params.clustalw_options, params.input)
     clustalo(params.clustalo_options, params.input)
     amap(params.amap_options, params.input)
+    prank(params.prank_options, params.input)
+    fsa(params.fsa_options, params.input)
+
 
     alignments = mafft.out
         .mix(muscle.out)
@@ -49,6 +56,8 @@ workflow {
         .mix(clustalw.out)
         .mix(clustalo.out)
         .mix(amap.out)
+        .mix(prank.out)
+        .mix(fsa.out)
         .collect()
 
     rustyMetal(alignments)
@@ -64,6 +73,8 @@ workflow {
     clustalw = clustalw.output
     clustalo = clustalo.output
     amap = amap.output
+    prank = prank.output
+    fsa = fsa.output
 
     rustyMetal = rustyMetal.output
 
@@ -101,6 +112,14 @@ output {
         mode 'copy'
     }
     amap {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    prank {
+        path 'MSA_outputs'
+        mode 'copy'
+    }
+    fsa {
         path 'MSA_outputs'
         mode 'copy'
     }
