@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/79/23d77ef18a258ac2fefe6e51e4bfc3/make_distance_matrix.py", line 3, in <module>
-    from sklearn.manifold import MDS
-ModuleNotFoundError: No module named 'sklearn'
