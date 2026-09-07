@@ -1,25 +1,14 @@
 #!/usr/bin/env nextflow
-
-include { mafft } from './modules/aligners.nf'
-include { muscle } from './modules/aligners.nf'
-include { kalign } from './modules/aligners.nf'
-include { t_coffee } from './modules/aligners.nf'
-include { probcons } from './modules/aligners.nf'
-include { clustalw } from './modules/aligners.nf'
-include { clustalo } from './modules/aligners.nf'
-include { amap } from './modules/aligners.nf'
-include { prank } from './modules/aligners.nf'
-include { fsa } from './modules/aligners.nf'
-
+include { align } from './modules/aligners.nf'
 include { rustyMetal } from './modules/rusty-metal.nf'
-
 include { graphs } from './modules/graphing.nf'
 
 /*
 *
 */
 params {
-    input: Path = 'data/test_gapless.fasta'
+    inputs: List<String> = ['data/test_gapless.fasta']
+    aligners: List<String> = ['mafft', 'muscle', 'kalign', 't_coffee', 'probcons', 'clustalw', 'clustalo', 'amap', 'prank', 'fsa']
     mafft_options: String = 'mafft --auto'
     muscle_options: String = ''
     kalign_options: String = ''
@@ -30,96 +19,46 @@ params {
     amap_options: String = ''
     prank_options: String = ''
     fsa_options: String = ''
-
 }
 
 workflow {
-
     main:
-    mafft(params.mafft_options, params.input)
-    muscle(params.muscle_options, params.input)
-    kalign(params.kalign_options, params.input)
-    t_coffee(params.t_coffee_options, params.input)
-    probcons(params.probcons_options, params.input)
-    clustalw(params.clustalw_options, params.input)
-    clustalo(params.clustalo_options, params.input)
-    amap(params.amap_options, params.input)
-    prank(params.prank_options, params.input)
-    fsa(params.fsa_options, params.input)
+    def optionsMap = [
+        mafft: params.mafft_options, muscle: params.muscle_options,
+        kalign: params.kalign_options, t_coffee: params.t_coffee_options,
+        probcons: params.probcons_options, clustalw: params.clustalw_options,
+        clustalo: params.clustalo_options, amap: params.amap_options,
+        prank: params.prank_options, fsa: params.fsa_options,
+    ]
 
+    input_ch = channel.fromList(params.inputs)
+        .map { f -> tuple(file(f).simpleName, file(f)) }   // (sample_id, fasta)
 
-    alignments = mafft.out
-        .mix(muscle.out)
-        .mix(kalign.out)
-        .mix(t_coffee.out.MSA)
-        .mix(probcons.out)
-        .mix(clustalw.out)
-        .mix(clustalo.out)
-        .mix(amap.out)
-        .mix(prank.out)
-        .mix(fsa.out)
-        .collect()
+    tool_ch = channel.fromList(params.aligners)
 
-    rustyMetal(alignments)
+    // cross product: every (tool, sample_id, fasta) combination
+    combos = tool_ch.combine(input_ch)
+        .map { tool, sample_id, fasta -> tuple(sample_id, tool, optionsMap[tool], fasta) }
+
+    align(combos)
+
+    alignments_by_sample = align.out.alignment
+        .map { sample_id, tool, fasta -> tuple(sample_id, fasta) }
+        .groupTuple()          // → (sample_id, [fasta1, fasta2, ..., fastaN])  -- one emission PER input file
+
+    rustyMetal(alignments_by_sample)
 
     graphs(file('non-nextflow/make_distance_matrix.py'),rustyMetal.out)
 
     publish:
-    mafft = mafft.output
-    muscle = muscle.output
-    kalign = kalign.output
-    t_coffee = t_coffee.output.MSA
-    probcons = probcons.out
-    clustalw = clustalw.output
-    clustalo = clustalo.output
-    amap = amap.output
-    prank = prank.output
-    fsa = fsa.output
-
-    rustyMetal = rustyMetal.output
-
-    MDS = graphs.out.MDS
+    aligners     = align.out.alignment
+    rustyMetal   = rustyMetal.output
+    MDS          = graphs.out.MDS
     hierarchical = graphs.out.hierarchical
 }
 
 output {
-    mafft {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    muscle {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    kalign {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    t_coffee{
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    probcons {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    clustalw {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    clustalo {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    amap {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    prank {
-        path 'MSA_outputs'
-        mode 'copy'
-    }
-    fsa {
+    aligners {
         path 'MSA_outputs'
         mode 'copy'
     }

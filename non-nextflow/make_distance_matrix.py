@@ -10,11 +10,9 @@ import mds, hierarchical_clustering
 #Args
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", help="The input csv file containing the pairwise distances between MSAs", required=False)
+parser.add_argument("-o", "--output", help="The output directory for the graphs", required=False)
 parser.add_argument("-n", "--np_intermediate", action="store_true", help="Creates a numpy .npz file with the distance matrix and points list, instead of running all graphs", required=False)
 args = parser.parse_args()
-
-if args.input:
-    print("Input:", args.input)
 
 # Read the CSV
 if args.input:
@@ -22,10 +20,16 @@ if args.input:
 else:
     print("No input file provided. Using default 'results/rusty-metal/rusty-metal.csv'.")
     df = pd.read_csv("results/rusty-metal/rusty-metal.csv")
+    
+if args.output:
+    output_dir = args.output
+else:
+    print("No output directory provided. Using default 'results/graphs/'.")
+    output_dir = "MSA_graphs/"
 
 # Strip everything before the final '/' from the filenames
-df["msa_a"] = df["msa_a"].str.rsplit("/", n=1).str[-1].str.removesuffix(".fasta")
-df["msa_b"] = df["msa_b"].str.rsplit("/", n=1).str[-1].str.removesuffix(".fasta")
+df["msa_a"] = df["msa_a"].str.rsplit("/", n=1).str[-1].str.removesuffix(f".fasta")
+df["msa_b"] = df["msa_b"].str.rsplit("/", n=1).str[-1].str.removesuffix(f".fasta")
 
 # Get the set of MSAs
 points = sorted(set(df["msa_a"]) | set(df["msa_b"]))
@@ -61,6 +65,6 @@ if args.np_intermediate:
 
 #If doing everything in one go, do that
 else:
-    mds.mds_and_plot(D, points)
-    hierarchical_clustering.hierarchical_and_plot(D, points)
+    mds.mds_and_plot(D, points, output_file=f"{output_dir}/MSA_distances.png")
+    hierarchical_clustering.hierarchical_and_plot(D, points, output_file=f"{output_dir}/MSA_hierarchical.png")
     
