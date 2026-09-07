@@ -1,158 +1,26 @@
-process mafft {
+process align {
+    tag "${sample_id}:${tool}"
 
     input:
-    val options
-    path sequences
+    tuple val(sample_id), val(tool), val(options), path(sequences)
 
     output:
-    path "mafft.fasta"
+    tuple val(sample_id), val(tool), path("${sample_id}/${tool}.fasta"), emit: alignment
 
     script:
     """
-    ${options} ${sequences} > mafft.fasta
-    """
-}
-
-process muscle {
-
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'muscle.fasta'
-
-    script:
-    """
-    muscle -align ${sequences} -output muscle.fasta ${options}
-    """
-}
-
-process t_coffee {
-    
-    input:
-    val options
-    path sequences
-
-    output:
-    path 't_coffee.fasta', emit: MSA
-
-    script:
-    """
-    t_coffee ${sequences} -output=fasta -outfile=t_coffee.fasta ${options}
-    """
-}
-
-process kalign {
-
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'kalign.fasta'
-
-    script:
-    """
-    kalign ${options} -i ${sequences} -o kalign.fasta
-    """
-}
-
-process probcons {
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'probcons.fasta'
-
-    script:
-    """
-    probcons ${options} ${sequences} > probcons.fasta
-    """
-}
-
-process clustalw {
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'clustalw.fasta'
-
-    script:
-    """
-    clustalw ${sequences} -output=fasta -outfile=clustalw.fasta ${options}
-    """
-}
-
-process clustalo {
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'clustalo.fasta'
-
-    script:
-    """
-    clustalo -i ${sequences} -o clustalo.fasta ${options}
-    """
-}
-
-process amap {
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'amap.fasta'
-
-    script:
-    """
-    amap ${options} ${sequences} > amap.fasta
-    """
-}
-
-// process dialign_tx {
-//     input:
-//     val options
-//     path sequences
-
-//     output:
-//     path 'dialign-tx.fasta'
-
-//     script:
-//     """
-//     dialign-tx ${options} ${sequences} dialign-tx.fasta
-//     """
-// }
-
-process prank {
-    
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'prank.fasta'
-
-    script:
-    """
-    prank -d=${sequences} -o=prank ${options} && mv prank.best.fas prank.fasta
-    """
-}
-
-process fsa {
-    input:
-    val options
-    path sequences
-
-    output:
-    path 'fsa.fasta'
-
-    script:
-    """
-    fsa ${options} ${sequences} > fsa.fasta
+    mkdir ${sample_id}
+    case ${tool} in
+        mafft)    ${options} ${sequences} > ${sample_id}/mafft.fasta ;;
+        muscle)   muscle -align ${sequences} -output ${sample_id}/muscle.fasta ${options} ;;
+        kalign)   kalign ${options} -i ${sequences} -o ${sample_id}/kalign.fasta ;;
+        t_coffee) t_coffee ${sequences} -output=fasta -outfile=${sample_id}/t_coffee.fasta ${options} ;;
+        probcons) probcons ${options} ${sequences} > ${sample_id}/probcons.fasta ;;
+        clustalw) clustalw ${sequences} -output=fasta -outfile=${sample_id}/clustalw.fasta ${options} ;;
+        clustalo) clustalo -i ${sequences} -o ${sample_id}/clustalo.fasta ${options} ;;
+        amap)     amap ${options} ${sequences} > ${sample_id}/amap.fasta ;;
+        prank)    prank -d=${sequences} -o=prank ${options} && mv prank.best.fas ${sample_id}/prank.fasta && sed -i '/^>/ s/.*/\\L&/' ${sample_id}/prank.fasta ;;
+        fsa)      fsa ${options} ${sequences} > ${sample_id}/fsa.fasta ;;
+    esac
     """
 }

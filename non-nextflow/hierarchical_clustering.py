@@ -7,7 +7,7 @@ from scipy.spatial.distance import squareform
 
 
 
-def hierarchical_and_plot(distance_matrix, points):
+def hierarchical_and_plot(distance_matrix, points, output_file='MSA_hierarchical.png'):
 
     # Convert square distance matrix to SciPy's condensed format
     condensed_D = squareform(distance_matrix)
@@ -29,7 +29,7 @@ def hierarchical_and_plot(distance_matrix, points):
     plt.ylabel("Distance")
     plt.tight_layout()
 
-    plt.savefig("MSA_hierarchical.png", dpi=200)
+    plt.savefig(output_file, dpi=200)
     plt.close()
 
 if __name__ == "__main__":
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     D = data["D"]
     points = data["points"]
     
-    hierarchical(D, points)
+    hierarchical_and_plot(D, points, output_file=args.output)
     
     

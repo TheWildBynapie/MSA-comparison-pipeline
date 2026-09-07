@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import MDS
 
 #Function to calculate and display MDS
-def mds_and_plot(distance_matrix, points):
+def mds_and_plot(distance_matrix, points, output_file='MSA_distances.png'):
     # Perform MDS
     mds = MDS(
         n_components=2,
@@ -24,7 +24,7 @@ def mds_and_plot(distance_matrix, points):
     for msa, (x, y) in zip(points, coords):
         plt.annotate(msa, (x, y))
 
-    plt.savefig('MSA_distances.png', dpi=200)
+    plt.savefig(output_file, dpi=200)
     plt.close()
 
 
