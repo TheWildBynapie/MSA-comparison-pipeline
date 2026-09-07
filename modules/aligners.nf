@@ -1,5 +1,5 @@
 process align {
-    tag "${sample_id}:${tool}"
+    tag "${run_id}:${sample_id}:${tool}"
 
     input:
     tuple val(run_id), val(tool), val(options), val(sample_id),path(sequences)
