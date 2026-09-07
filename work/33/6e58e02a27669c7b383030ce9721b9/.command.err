@@ -1,8 +1,0 @@
-Reading FASTA-format sequence file 'test_gapless.fasta'...done.
-Read 3 sequences.
-Sequences match a DNA alphabet.
-Computed k-mer similarities (k = 2) between input sequences.
-Collecting pairwise posterior probabilities.
-Assembling list of candidate edges.
-Annealing by adding edges to the DAG.
-Beginning iterative refinement.
