@@ -1,13 +1,14 @@
 process rustyMetal {
+    tag "${sample_id}"
 
     input:
-    val aligners
+    tuple val(sample_id), path(alignments)
 
     output:
-    path 'rusty-metal.csv'
+    tuple val(sample_id), path("rusty_metal_${sample_id}.csv"), emit: output
 
     script:
     """
-    rusty-metal ${aligners.join(' ')} -o rusty-metal.csv
+    rusty-metal ${alignments.join(' ')} -o rusty_metal_${sample_id}.csv
     """
 }

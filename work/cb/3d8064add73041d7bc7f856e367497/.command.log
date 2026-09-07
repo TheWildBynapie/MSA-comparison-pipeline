@@ -1,0 +1,13 @@
+
+-----------------
+ PRANK v.250331:
+-----------------
+
+Input for the analysis
+ - aligning sequences in 'test_gapless.fasta'
+ - using inferred alignment guide tree
+ - option '+F' is not used; it can be enabled with '+F'
+ - external tools available:
+    MAFFT for initial alignment
+    Exonerate for alignment anchoring
+
