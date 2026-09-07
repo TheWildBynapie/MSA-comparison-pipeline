@@ -4,50 +4,58 @@ include { rustyMetal } from './modules/rusty-metal.nf'
 include { graphs } from './modules/graphing.nf'
 
 /*
-*
+* Inputs: the .fasta files to be aligned, and have those alignments compared.
+* Runs: the runs of the MSA tools to be executed per fasta file.
 */
 params {
     inputs: List<String> = ['data/test_gapless.fasta']
-    aligners: List<String> = ['mafft', 'muscle', 'kalign', 't_coffee', 'probcons', 'clustalw', 'clustalo', 'amap', 'prank', 'fsa']
-    mafft_options: String = 'mafft --auto'
-    muscle_options: String = ''
-    kalign_options: String = ''
-    t_coffee_options: String = ''
-    probcons_options: String = ''
-    clustalw_options: String = ''
-    clustalo_options: String = ''
-    amap_options: String = ''
-    prank_options: String = ''
-    fsa_options: String = ''
+    runs: List<String> = [
+        /*Each line defines a run of a MSA tool.
+        * Run names are arbitrary, but must be unique. They are used in the output file names.
+        * The format is:
+        * '<run name>:<tool name>:<tool_options>'
+        */
+        'mafft_auto:mafft:mafft --auto', 
+        'mafft_linsi:mafft:linsi',
+        'muscle:muscle:', 
+        'kalign:kalign:', 
+        't_coffee:t_coffee:', 
+        'probcons:probcons:', 
+        'clustalw:clustalw:', 
+        'clustalo:clustalo:', 
+        'amap:amap:', 
+        'prank:prank:', 
+        'fsa:fsa:'
+    ]
 }
 
 workflow {
     main:
-    def optionsMap = [
-        mafft: params.mafft_options, muscle: params.muscle_options,
-        kalign: params.kalign_options, t_coffee: params.t_coffee_options,
-        probcons: params.probcons_options, clustalw: params.clustalw_options,
-        clustalo: params.clustalo_options, amap: params.amap_options,
-        prank: params.prank_options, fsa: params.fsa_options,
-    ]
 
+    //Each input fasta file becomes a tuple of (sample_id, fasta_path)
     input_ch = channel.fromList(params.inputs)
-        .map { f -> tuple(file(f).simpleName, file(f)) }   // (sample_id, fasta)
+        .map { f -> tuple(file(f).simpleName, file(f)) }
 
-    tool_ch = channel.fromList(params.aligners)
+    //Each run is a tuple of (run_id, tool, options)
+    run_ch = channel.fromList(params.runs)
+        .map { entry ->
+           def (run_id, tool, options) = entry.split(':', 3)
+           tuple(run_id, tool, options)
+        }
 
-    // cross product: every (tool, sample_id, fasta) combination
-    combos = tool_ch.combine(input_ch)
-        .map { tool, sample_id, fasta -> tuple(sample_id, tool, optionsMap[tool], fasta) }
+    // cross product: every (run, sample_id / fasta) combination
+    combos = run_ch.combine(input_ch)
+        .map { run_id, tool, options, sample_id, fasta -> tuple(run_id, tool, options, sample_id, fasta) }
 
+    //Align everything
     align(combos)
 
+    //Regroup alignments by the fasta file/sample_id
     alignments_by_sample = align.out.alignment
-        .map { sample_id, tool, fasta -> tuple(sample_id, fasta) }
         .groupTuple()          // → (sample_id, [fasta1, fasta2, ..., fastaN])  -- one emission PER input file
 
+    //Run rusty-metal, and then graphing on each group of alignments
     rustyMetal(alignments_by_sample)
-
     graphs(file('non-nextflow/make_distance_matrix.py'),rustyMetal.out)
 
     publish:
@@ -60,20 +68,16 @@ workflow {
 output {
     aligners {
         path 'MSA_outputs'
-        mode 'copy'
     }
 
     rustyMetal {
         path 'rusty-metal'
-        mode 'copy'
     }
 
     MDS {
         path 'MSA_graphs'
-        mode 'copy'
     }
     hierarchical {
         path 'MSA_graphs'
-        mode 'copy'
     }
 }
