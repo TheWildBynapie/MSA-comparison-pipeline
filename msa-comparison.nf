@@ -5,7 +5,9 @@ include { graphs } from './modules/graphing.nf'
 
 /*
 * Inputs: the .fasta files to be aligned, and have those alignments compared.
-* Runs: the runs of the MSA tools to be executed per fasta file.
+* Runs: the runs of the MSA tools to be executed per fasta file.*
+*
+* The parameter values here are examples. They are overridden by the config file.
 */
 params {
     inputs: List<String> = ['data/test_gapless.fasta']
@@ -17,7 +19,7 @@ params {
         */
         'mafft_auto:mafft:mafft --auto', 
         'mafft_linsi:mafft:linsi',
-        'muscle:muscle:', 
+        'muscle:muscle:-align', 
         'kalign:kalign:', 
         't_coffee:t_coffee:', 
         'probcons:probcons:', 
