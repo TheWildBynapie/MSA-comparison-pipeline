@@ -12,7 +12,7 @@ process align {
     mkdir ${sample_id}
     case ${tool} in
         mafft)    ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;
-        muscle)   muscle -align ${sequences} -output ${sample_id}/${run_id}.fasta ${options} ;;
+        muscle)   muscle ${options} ${sequences} -output ${sample_id}/${run_id}.fasta ;;
         kalign)   kalign ${options} -i ${sequences} -o ${sample_id}/${run_id}.fasta ;;
         t_coffee) t_coffee ${sequences} -output=fasta -outfile=${sample_id}/${run_id}.fasta ${options} ;;
         probcons) probcons ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;

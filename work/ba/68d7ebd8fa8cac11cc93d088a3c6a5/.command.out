@@ -1,0 +1,53 @@
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] This is rusty-metAL version 1.0.0
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] Computing the distance between the following MSAs, and writing the output to rusty_metal_test.csv and using 0 threads. Standardisation is on.
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] > kalign.fasta
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] > muscle.fasta
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] > t_coffee.fasta
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] > mafft_linsi.fasta
+2026-09-07T12:01:17.773Z INFO  [rusty_metal] > mafft_auto.fasta
+2026-09-07T12:01:17.774Z INFO  [rusty_metal::msa] Reading msa file: t_coffee.fasta
+2026-09-07T12:01:17.774Z INFO  [rusty_metal::msa] Reading msa file: muscle.fasta
+2026-09-07T12:01:17.774Z INFO  [rusty_metal::msa] Reading msa file: kalign.fasta
+2026-09-07T12:01:17.774Z INFO  [rusty_metal::msa] Reading msa file: mafft_auto.fasta
+2026-09-07T12:01:17.774Z INFO  [rusty_metal::msa] Reading msa file: mafft_linsi.fasta
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 7 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 84/192 = 0.4375
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 0 complete.
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 84/192 = 0.4375
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 2 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] kalign -> mafft_linsi: 0.3333333333333333
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 5 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] muscle -> mafft_linsi: 0.5
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 0/192 = 0
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 9 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] kalign -> muscle: 0.4375
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] mafft_linsi -> mafft_auto: 0
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 4 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] muscle -> t_coffee: 0.4375
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 6 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] muscle -> mafft_auto: 0.5
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 1 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] kalign -> t_coffee: 0.5
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] t_coffee -> mafft_linsi: 0.5625
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 3 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] kalign -> mafft_auto: 0.3333333333333333
+2026-09-07T12:01:17.775Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Comparison 8 complete.
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] t_coffee -> mafft_auto: 0.5625
+2026-09-07T12:01:17.775Z INFO  [rusty_metal] Writing output to rusty_metal_test.csv

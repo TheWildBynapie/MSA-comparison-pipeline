@@ -1,0 +1,11 @@
+msa_a,msa_b,distance
+mafft_linsi.fasta,mafft_auto.fasta,0
+kalign.fasta,muscle.fasta,0.4375
+kalign.fasta,t_coffee.fasta,0.5
+kalign.fasta,mafft_auto.fasta,0.3333333333333333
+kalign.fasta,mafft_linsi.fasta,0.3333333333333333
+muscle.fasta,t_coffee.fasta,0.4375
+muscle.fasta,mafft_auto.fasta,0.5
+t_coffee.fasta,mafft_auto.fasta,0.5625
+muscle.fasta,mafft_linsi.fasta,0.5
+t_coffee.fasta,mafft_linsi.fasta,0.5625
