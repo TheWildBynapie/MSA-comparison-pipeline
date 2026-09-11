@@ -38,3 +38,13 @@
 2026-09-07 13:36:57	7.9s	amazing_shaw	OK	bd7aae932528dd6c4fcf2e8af3fe7a86	ec22ca5d-6df9-428f-bc87-eb14e261b465	nextflow msa-comparison.nf
 2026-09-07 13:54:23	7.7s	mad_poisson	OK	3e0e29dd55be15ca0da6b6b62323e7f8	ed764af6-8742-4758-beb6-ee9df0eef482	nextflow msa-comparison.nf
 2026-09-07 14:01:15	7.8s	sick_sax	OK	3e0e29dd55be15ca0da6b6b62323e7f8	1dee34b9-fa00-42af-b411-627324c78015	nextflow msa-comparison.nf
+2026-09-11 10:13:49	5.1s	hopeful_einstein	ERR	2c8f22dc961efe8d74ba436768a6100d	ec8f3c90-4bfd-43f8-bccf-b66e7e58f90f	nextflow msa-comparison.nf
+2026-09-11 10:14:22	7.1s	peaceful_rutherford	ERR	2c8f22dc961efe8d74ba436768a6100d	251e12de-41de-4397-a46a-7d65e124264d	nextflow msa-comparison.nf
+2026-09-11 10:21:47	-	nostalgic_bartik	-	2c8f22dc961efe8d74ba436768a6100d	88742537-28a9-4a0d-b8c9-39f674ec2928	nextflow msa-comparison.nf --inputs data/blastSeqtk.fasta
+2026-09-11 10:22:01	-	disturbed_rubens	-	2c8f22dc961efe8d74ba436768a6100d	f2aaac6e-b479-480a-81f9-912ccf6a3378	nextflow msa-comparison.nf --inputs '[data/blastSeqtk.fasta]'
+2026-09-11 10:25:34	11.3s	ridiculous_church	ERR	2c8f22dc961efe8d74ba436768a6100d	4f7f4866-fa9a-49ca-af04-502044c830a1	nextflow msa-comparison.nf -profile blastSeqtk
+2026-09-11 10:27:22	10.8s	mad_wilson	ERR	2c8f22dc961efe8d74ba436768a6100d	9f8bc9e8-452c-4caa-8a1a-a575b30edf86	nextflow msa-comparison.nf -profile blastSeqtk
+2026-09-11 10:31:37	11.1s	grave_watson	OK	2c8f22dc961efe8d74ba436768a6100d	9f8bc9e8-452c-4caa-8a1a-a575b30edf86	nextflow msa-comparison.nf -profile blastSeqtk -resume
+2026-09-11 10:35:50	6.5s	shrivelled_ride	ERR	2c8f22dc961efe8d74ba436768a6100d	9f8bc9e8-452c-4caa-8a1a-a575b30edf86	nextflow msa-comparison.nf -resume
+2026-09-11 10:36:14	6.2s	ridiculous_legentil	ERR	2c8f22dc961efe8d74ba436768a6100d	d5e457ad-2f0d-4d22-838d-5f3f0cc22778	nextflow msa-comparison.nf
+2026-09-11 10:58:02	5.4s	tiny_bose	OK	2c8f22dc961efe8d74ba436768a6100d	38bbd604-8eb3-4f8c-bc2f-10e9660f3bc4	nextflow msa-comparison.nf
