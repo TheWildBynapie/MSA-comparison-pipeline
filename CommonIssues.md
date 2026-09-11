@@ -2,8 +2,8 @@
 
 ### The way prank outputs sequence headers 
 Likely errors:
-* ValueError: Input X contains NaN
-  "MDS does not accept missing values encoded as NaN natively..." **(Should be resolved)**
+* **(Should be resolved)** ValueError: Input X contains NaN
+  "MDS does not accept missing values encoded as NaN natively..." 
 * Workflow doesn't run with a reference alignment included
 
 Explanation:
