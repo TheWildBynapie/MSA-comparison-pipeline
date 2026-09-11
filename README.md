@@ -23,10 +23,10 @@ Typical workflow:
 | Name          | Version number | Latest version as of | Working | Notes |
 | ------------- | -------------- | ------------------------- | - |----- |
 | AMAP-align    |AMAP.2.2|30/08/2026|yes| |
-| Clustal Omega |1.0.3|                           | yes | clustal.org hates me|
+| Clustal Omega |1.0.3|not latest| yes | clustal.org hates me (I'm blocked and can't download a newer version)|
 | ClustalW      |2.1|30/08/2026|yes|at least this is latest anyway lol|
 | DIALIGN-TX    |                |                           |no|Needs a 'isDNAorProtein' detection method to be able to run automatically. Since a matrixfile must be specified|
-| FSA           |1.15.9|                           |yes|       |
+| FSA           |1.15.9|11/09/2026|yes|       |
 | Kalign        |3.4.0|                           |yes|need 3.5.1 as of 30/08/2026|
 | MAFFT         |v7.526|30/08/2026|yes| |
 | MUSCLE        |5.3.linux64|30/08/2026|yes| |
