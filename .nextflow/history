@@ -48,3 +48,23 @@
 2026-09-11 10:35:50	6.5s	shrivelled_ride	ERR	2c8f22dc961efe8d74ba436768a6100d	9f8bc9e8-452c-4caa-8a1a-a575b30edf86	nextflow msa-comparison.nf -resume
 2026-09-11 10:36:14	6.2s	ridiculous_legentil	ERR	2c8f22dc961efe8d74ba436768a6100d	d5e457ad-2f0d-4d22-838d-5f3f0cc22778	nextflow msa-comparison.nf
 2026-09-11 10:58:02	5.4s	tiny_bose	OK	2c8f22dc961efe8d74ba436768a6100d	38bbd604-8eb3-4f8c-bc2f-10e9660f3bc4	nextflow msa-comparison.nf
+2026-09-11 11:50:46	21.7s	stupefied_pike	OK	2c8f22dc961efe8d74ba436768a6100d	a8659ba8-6460-4908-ba6f-6a974093d426	nextflow msa-comparison.nf -profile mammalHistoneH3
+2026-09-11 12:05:38	25.7s	lonely_magritte	OK	2c8f22dc961efe8d74ba436768a6100d	b242d476-8934-4ff9-be4c-32fdc67a08c7	nextflow msa-comparison.nf -profile mammalHistoneH3
+2026-09-11 12:18:45	9.3s	peaceful_ramanujan	ERR	2c8f22dc961efe8d74ba436768a6100d	641d8fb5-323d-4bb3-bab6-3323008c9b48	nextflow msa-comparison.nf -profile mammalGrowthHormone
+2026-09-11 12:21:11	1m 21s	jovial_sinoussi	ERR	2c8f22dc961efe8d74ba436768a6100d	86278cc1-ea37-46e5-8810-4ece9ed32931	nextflow msa-comparison.nf -profile mammalGrowthHormone
+2026-09-11 12:22:57	1m 24s	trusting_jang	OK	2c8f22dc961efe8d74ba436768a6100d	b22d26a7-4d90-40c9-a2f7-44bda040ab8b	nextflow msa-comparison.nf -profile mammalGrowthHormone
+2026-09-11 12:59:35	1m 48s	happy_blackwell	OK	2c8f22dc961efe8d74ba436768a6100d	db026fd2-083f-4199-a338-cc0495a4f386	nextflow msa-comparison.nf -profile mammalMHC
+2026-09-11 14:53:32	1.6s	exotic_faggin	ERR	8d37e529c4920ff1c988ecb2f6678243	d680c48a-b045-4464-bc66-33dd30a6a98a	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 14:53:59	2.1s	furious_goodall	ERR	9b342d6e30b6c1359bf3a4569fec62c7	f2d400c3-c73f-438b-b2c3-76d693aea156	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 14:55:26	2.1s	crazy_ride	ERR	8507d54d4bbc7df568e6f3435a5bb26f	dd987837-19a7-41c0-bda9-9b1be6434827	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 14:58:37	1.9s	festering_kirch	ERR	9b342d6e30b6c1359bf3a4569fec62c7	dbf25d53-93e7-4e2b-87c8-cf872bea56aa	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:00:36	2.7s	berserk_hypatia	ERR	7e06cbc089132bec396533a2dfc67927	851207e1-bee8-4415-9ef4-ed868fa7db33	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:20:30	2.6s	confident_salas	ERR	b0dbb2bae0e1acaea7007033fc5a506c	e2651ae2-9873-40dc-9f62-c0dc7cb1ed34	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:22:43	2.3s	high_meninsky	ERR	2006a59912b55c13bc52f7ff692782ce	75f4295a-db03-48fc-be79-d2ee3184c798	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:28:31	2.4s	zen_wescoff	ERR	6d4c952d14d927090a6dc53c38cb9c03	52be1a01-2b4f-4ec8-99f6-972191ac1d3d	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:29:20	2.2s	trusting_coulomb	OK	86db27c993385abd7c9221e6a59a0fb5	556faf1d-2bf8-4a6b-8d14-03f7c28677f8	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:30:21	2.7s	curious_euler	OK	86db27c993385abd7c9221e6a59a0fb5	fbfa9534-7549-432d-b0f3-d97da7055c94	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:36:36	2.1s	gloomy_euclid	OK	86db27c993385abd7c9221e6a59a0fb5	eabdb02b-e8ea-4579-8962-dcd3c850d27b	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:39:24	2.6s	goofy_lumiere	OK	22e79d298414d1deaeae7d0378e3069a	dfea6eaf-f339-43d8-bbfa-4793772e0f50	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:40:11	2.5s	insane_wright	OK	e5934d6fe92b8d44a02b13ebb3aa390b	8b5c3968-8614-436a-aad2-30756887b269	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
+2026-09-11 15:41:06	2.2s	evil_hirsch	OK	22e79d298414d1deaeae7d0378e3069a	c8cf9abe-459e-4ea0-a249-d910bc1136ad	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'Cytochrome c oxidase subunit I'
