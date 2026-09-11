@@ -19,8 +19,9 @@ process align {
         clustalw) clustalw ${sequences} -output=fasta -outfile=${sample_id}/${run_id}.fasta ${options} ;;
         clustalo) clustalo -i ${sequences} -o ${sample_id}/${run_id}.fasta ${options} ;;
         amap)     amap ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;
-        prank)    prank -d=${sequences} -o=prank ${options} && mv prank.best.fas ${sample_id}/${run_id}.fasta && sed -i '/^>/ s/.*/\\L&/' ${sample_id}/${run_id}.fasta ;;
+        prank)    prank -d=${sequences} -o=prank -shortnames ${options} && mv prank.best.fas ${sample_id}/${run_id}.fasta ;;
         fsa)      fsa ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;
     esac
+    sed -i 's/^>\\(.\\)/>\\U\\1/' ${sample_id}/${run_id}.fasta
     """
 }
