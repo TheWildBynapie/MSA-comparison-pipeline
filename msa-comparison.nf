@@ -1,6 +1,7 @@
 #!/usr/bin/env nextflow
 include { align } from './modules/aligners.nf'
 include { rustyMetal } from './modules/rusty-metal.nf'
+include { average_dpos } from './modules/average-dpos.nf'
 include { graphs } from './modules/graphing.nf'
 
 /*
@@ -58,7 +59,18 @@ workflow {
 
     //Run rusty-metal, and then graphing on each group of alignments
     rustyMetal(alignments_by_sample)
-    graphs(file('non-nextflow/make_distance_matrix.py'),rustyMetal.out)
+
+    // Collect every replicate's CSV into one list for averaging
+    replicate_csvs = rustyMetal.out.output
+        .map { sample_id, csv -> csv }
+        .collect()
+
+    average_dpos(file('non-nextflow/average_dpos.py'), replicate_csvs)
+
+    // Mix the averaged result back into the same channel shape as individual runs
+    all_for_graphing = rustyMetal.out.output.mix(average_dpos.out.output)
+
+    graphs(file('non-nextflow/make_distance_matrix.py'), all_for_graphing)
 
     publish:
     aligners     = align.out.alignment
