@@ -1,9 +1,0 @@
-
------------------
- PRANK v.250331:
------------------
-
-Input for the analysis
- - aligning sequences in 'test.fasta'
- - using inferred alignment guide tree
- - option '+F' is not used; it can be enabled with '+F'

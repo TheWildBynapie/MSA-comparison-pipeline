@@ -1,3 +1,0 @@
-[2026-10-08 12:20:21] :   ERROR : File: test.fasta does not exist. (./lib/src/msa_io.c line 86)
-[2026-10-08 12:20:21] :   ERROR : Function "kalign_read_input(param->infile[i], &msa,param->quiet)" failed. (./src/run_kalign.c line 349)
-[2026-10-08 12:20:21] :   ERROR : Function "run_kalign(param)" failed. (./src/run_kalign.c line 326)
