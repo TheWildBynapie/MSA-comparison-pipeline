@@ -15,8 +15,9 @@ def mds_and_plot(distance_matrix, points, output_file='MSA_distances.png'):
     )
 
     coords = mds.fit_transform(distance_matrix)
+    stress = mds.stress_
 
-    print(f"Stress: {mds.stress_}")
+    print(f"Stress: {stress}")
 
     # Plot
     plt.scatter(coords[:, 0], coords[:, 1])
@@ -26,6 +27,8 @@ def mds_and_plot(distance_matrix, points, output_file='MSA_distances.png'):
 
     plt.savefig(output_file, dpi=200)
     plt.close()
+    
+    return stress
 
 
 if __name__ == "__main__":

@@ -8,6 +8,7 @@ process graphs {
     output:
     path "${sample_id}/MSA_distances.png", emit: MDS
     path "${sample_id}/MSA_hierarchical.png", emit: hierarchical
+    path "${sample_id}/MSA_summary.txt", emit: summary
 
     script:
     """

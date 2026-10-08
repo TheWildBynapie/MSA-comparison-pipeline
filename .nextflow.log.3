@@ -1,0 +1,294 @@
+Oct-08 12:20:17.621 [main] DEBUG nextflow.cli.Launcher - $> nextflow msa-comparison.nf
+Oct-08 12:20:17.848 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Oct-08 12:20:17.908 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/byna/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Oct-08 12:20:17.951 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-08 12:20:17.952 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-08 12:20:17.957 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Oct-08 12:20:17.986 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Oct-08 12:20:18.267 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Oct-08 12:20:18.274 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-08 12:20:18.322 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/nextflow.config
+Oct-08 12:20:18.326 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/nextflow.config
+Oct-08 12:20:18.333 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Oct-08 12:20:18.367 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-08 12:20:18.938 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-08 12:20:18.939 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-08 12:20:18.965 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/byna/.nextflow/secrets/store.json
+Oct-08 12:20:18.970 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@74ecacc3] - activable => nextflow.secret.LocalSecretsProvider@74ecacc3
+Oct-08 12:20:18.992 [main] DEBUG nextflow.cli.CmdRun - Launching `msa-comparison.nf` [mad_koch] - revision: 2c8f22dc96
+Oct-08 12:20:19.131 [main] DEBUG nextflow.Session - Session UUID: fe1cd061-62e9-411f-b59e-99697e52946b
+Oct-08 12:20:19.131 [main] DEBUG nextflow.Session - Run name: mad_koch
+Oct-08 12:20:19.132 [main] DEBUG nextflow.Session - Executor pool size: 16
+Oct-08 12:20:19.146 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-08 12:20:19.154 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-08 12:20:19.189 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 12646
+  Created: 09-07-2026 18:49 UTC (20:49 SAST)
+  System: Linux 7.0.0-31-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.4+7-1-26.04-Ubuntu
+  Encoding: UTF-8 (UTF-8)
+  Process: 15804@byna-laptop [127.0.1.1]
+  CPUs: 16 - Mem: 6.6 GB (499.1 MB) - Swap: 4 GB (2.6 GB)
+Oct-08 12:20:19.215 [main] DEBUG nextflow.Session - Work-dir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work [ext2/ext3]
+Oct-08 12:20:19.216 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/bin
+Oct-08 12:20:19.229 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-08 12:20:19.244 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-08 12:20:19.247 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Oct-08 12:20:19.300 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-08 12:20:19.314 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Oct-08 12:20:19.417 [main] DEBUG nextflow.Session - Session start
+Oct-08 12:20:19.425 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Oct-08 12:20:20.054 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-08 12:20:20.414 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-08 12:20:20.415 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-08 12:20:20.429 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-08 12:20:20.441 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=6.6 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Oct-08 12:20:20.445 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-08 12:20:20.508 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'align': maxForks=0; fair=false; array=0
+Oct-08 12:20:20.562 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-08 12:20:20.562 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-08 12:20:20.563 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'rustyMetal': maxForks=0; fair=false; array=0
+Oct-08 12:20:20.581 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-08 12:20:20.581 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-08 12:20:20.582 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'graphs': maxForks=0; fair=false; array=0
+Oct-08 12:20:20.605 [main] DEBUG nextflow.Session - Process names: graphs, align, rustyMetal
+Oct-08 12:20:20.608 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Oct-08 12:20:20.610 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align
+Oct-08 12:20:20.611 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > rustyMetal
+Oct-08 12:20:20.612 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > graphs
+Oct-08 12:20:20.613 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_d1cf4c1f70df0590: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/aligners.nf
+  _nf_script_4ae44bad9b627c79: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/rusty-metal.nf
+  Main: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/msa-comparison.nf
+  _nf_script_41c868422661bd93: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/modules/graphing.nf
+Oct-08 12:20:20.613 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-08 12:20:20.613 [main] DEBUG nextflow.Session - Session await
+Oct-08 12:20:20.806 [Actor Thread 18] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 4] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 2] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 5] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 9] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 14] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 3] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 6] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 10] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 15] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 11] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 8] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.806 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 7] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.806 [Actor Thread 1] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.866 [Actor Thread 5] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.870 [Actor Thread 6] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.870 [Actor Thread 10] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.874 [Actor Thread 9] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.874 [Actor Thread 7] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test.fasta
+Oct-08 12:20:20.877 [Actor Thread 5] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta -- Cause: java.nio.file.NoSuchFileException: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/data/test_gapless.fasta
+Oct-08 12:20:20.930 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.934 [Task submitter] INFO  nextflow.Session - [ed/fd8cfc] Submitted process > align (probcons:test:probcons)
+Oct-08 12:20:20.947 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.948 [Task submitter] INFO  nextflow.Session - [72/2b8048] Submitted process > align (t_coffee:test_gapless:t_coffee)
+Oct-08 12:20:20.957 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.958 [Task submitter] INFO  nextflow.Session - [9e/619f1b] Submitted process > align (muscle:test_gapless:muscle)
+Oct-08 12:20:20.967 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.968 [Task submitter] INFO  nextflow.Session - [3c/4c6b30] Submitted process > align (kalign:test:kalign)
+Oct-08 12:20:20.976 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.977 [Task submitter] INFO  nextflow.Session - [0e/bf3d23] Submitted process > align (t_coffee:test:t_coffee)
+Oct-08 12:20:20.987 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:20.988 [Task submitter] INFO  nextflow.Session - [4e/0e5ae9] Submitted process > align (amap:test:amap)
+Oct-08 12:20:21.000 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.001 [Task submitter] INFO  nextflow.Session - [f3/f4e3e6] Submitted process > align (mafft_linsi:test_gapless:mafft)
+Oct-08 12:20:21.013 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.014 [Task submitter] INFO  nextflow.Session - [c0/7f4a95] Submitted process > align (kalign:test_gapless:kalign)
+Oct-08 12:20:21.026 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.027 [Task submitter] INFO  nextflow.Session - [75/98de3b] Submitted process > align (mafft_auto:test_gapless:mafft)
+Oct-08 12:20:21.038 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.039 [Task submitter] INFO  nextflow.Session - [7d/f3090b] Submitted process > align (mafft_linsi:test:mafft)
+Oct-08 12:20:21.048 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.049 [Task submitter] INFO  nextflow.Session - [1a/e99f64] Submitted process > align (clustalw:test:clustalw)
+Oct-08 12:20:21.054 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: align (probcons:test:probcons); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ed/fd8cfc1d8f68bf017ee0c7cbb03466]
+Oct-08 12:20:21.056 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-08 12:20:21.058 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.059 [Task submitter] INFO  nextflow.Session - [ff/127661] Submitted process > align (clustalw:test_gapless:clustalw)
+Oct-08 12:20:21.067 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: align (t_coffee:test_gapless:t_coffee); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/72/2b804817710d9031c974898530e5a6]
+Oct-08 12:20:21.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.069 [Task submitter] INFO  nextflow.Session - [45/19ba5c] Submitted process > align (clustalo:test_gapless:clustalo)
+Oct-08 12:20:21.072 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: align (muscle:test_gapless:muscle); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/9e/619f1b770f3b0242c53a13154d70f3]
+Oct-08 12:20:21.082 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: align (kalign:test:kalign); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/3c/4c6b3035b0ed980ee5c1359672c339]
+Oct-08 12:20:21.082 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.085 [Task submitter] INFO  nextflow.Session - [be/650b93] Submitted process > align (muscle:test:muscle)
+Oct-08 12:20:21.093 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (t_coffee:test_gapless:t_coffee); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/72/2b804817710d9031c974898530e5a6
+  error [nextflow.exception.ProcessFailedException]: Process `align (t_coffee:test_gapless:t_coffee)` terminated with an error exit status (1)
+Oct-08 12:20:21.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: align (t_coffee:test:t_coffee); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/0e/bf3d2351b08138952373c17e36c0bb]
+Oct-08 12:20:21.101 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: align (amap:test:amap); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/4e/0e5ae94f21995df7a10ce56d90d8e9]
+Oct-08 12:20:21.106 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.107 [Task submitter] INFO  nextflow.Session - [93/7d4973] Submitted process > align (clustalo:test:clustalo)
+Oct-08 12:20:21.109 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: align (kalign:test_gapless:kalign); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/c0/7f4a9564261b4420c0bf987a6780ec]
+Oct-08 12:20:21.117 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: align (clustalw:test:clustalw); status: COMPLETED; exit: 255; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/1a/e99f64e2e4d3e39950f6a21b37759e]
+Oct-08 12:20:21.118 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.120 [Task submitter] INFO  nextflow.Session - [d8/0cb1b7] Submitted process > align (mafft_auto:test:mafft)
+Oct-08 12:20:21.124 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: align (clustalw:test_gapless:clustalw); status: COMPLETED; exit: 255; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ff/12766145bf306344eb6e156e862723]
+Oct-08 12:20:21.131 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.132 [Task submitter] INFO  nextflow.Session - [24/f2aa71] Submitted process > align (probcons:test_gapless:probcons)
+Oct-08 12:20:21.137 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: align (clustalo:test_gapless:clustalo); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/45/19ba5c0b6c0a7b3b42581e56af6232]
+Oct-08 12:20:21.143 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.145 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'align (t_coffee:test_gapless:t_coffee)'
+
+Caused by:
+  Process `align (t_coffee:test_gapless:t_coffee)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  mkdir test_gapless
+  case t_coffee in
+      mafft)     test_gapless.fasta > test_gapless/t_coffee.fasta ;;
+      muscle)   muscle  test_gapless.fasta -output test_gapless/t_coffee.fasta ;;
+      kalign)   kalign  -i test_gapless.fasta -o test_gapless/t_coffee.fasta ;;
+      t_coffee) t_coffee test_gapless.fasta -output=fasta -outfile=test_gapless/t_coffee.fasta  ;;
+      probcons) probcons  test_gapless.fasta > test_gapless/t_coffee.fasta ;;
+      clustalw) clustalw test_gapless.fasta -output=fasta -outfile=test_gapless/t_coffee.fasta  ;;
+      clustalo) clustalo -i test_gapless.fasta -o test_gapless/t_coffee.fasta  ;;
+      amap)     amap  test_gapless.fasta > test_gapless/t_coffee.fasta ;;
+      prank)    prank -d=test_gapless.fasta -o=prank -shortnames  && mv prank.best.fas test_gapless/t_coffee.fasta ;;
+      fsa)      fsa  test_gapless.fasta > test_gapless/t_coffee.fasta ;;
+  esac
+  sed -i 's/^>\(.\)/>\U\1/' test_gapless/t_coffee.fasta
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  -trimfile      	S	[0] 	default
+  -split         	D	[0] 	0 
+  -split_nseq_thres	D	[0] 	0 
+  -split_score_thres	D	[0] 	0 
+  -check_pdb_status	D	[0] 	0 
+  -clean_seq_name	D	[0] 	0 
+  -seq_to_keep   	S	[0] 
+  -dpa_master_aln	S	[0] 
+  -dpa_maxnseq   	D	[0] 	0 
+  -dpa_min_score1	D	[0] 
+  -dpa_min_score2	D	[0] 
+  -dpa_keep_tmpfile	FL	[0] 	0
+  -dpa_debug     	D	[0] 	0 
+  -multi_core    	S	[0] 	templates_jobs_relax_msa_evaluate
+  -n_core        	D	[0] 	1 
+  -thread        	D	[0] 	1 
+  -max_n_proc    	D	[0] 	1 
+  -lib_list      	S	[0] 
+  -prune_lib_mode	S	[0] 	5
+  -tip           	S	[0] 	none
+  -rna_lib       	S	[0] 
+  -no_warning    	D	[0] 	0 
+  -run_local_script	D	[0] 	0 
+  -proxy         	S	[0] 	unset
+  -email         	S	[0] 
+  -clean_overaln 	D	[0] 	0 
+  -overaln_param 	S	[0] 
+  -overaln_mode  	S	[0] 
+  -overaln_model 	S	[0] 
+  -overaln_threshold	D	[0] 	0 
+  -overaln_target	D	[0] 	0 
+  -overaln_P1    	D	[0] 	0 
+  -overaln_P2    	D	[0] 	0 
+  -overaln_P3    	D	[0] 	0 
+  -overaln_P4    	D	[0] 	0 
+  -exon_boundaries	S	[0] 
+  -display       	D	[0] 	100 
+  
+  --ERROR:  : test_gapless.fasta does not exist [FATAL]
+  
+  
+  *************************************************************************************************
+  *                        FULL TRACE BACK PID: 16007                                    
+  16007 -- ERROR:  : test_gapless.fasta does not exist [FATAL]
+  16007 -- COM: t_coffee test_gapless.fasta -output fasta -outfile test_gapless/t_coffee.fasta 
+  16007 -- STACK: 15993 -> 16007
+  *************************************************************************************************
+  
+  # TERMINATION STATUS: FAILURE [PROGRAM: T-COFFEE pid 16007 ppid 15993
+  #CL: t_coffee test_gapless.fasta -output fasta -outfile test_gapless/t_coffee.fasta 
+
+Work dir:
+  /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/72/2b804817710d9031c974898530e5a6
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Oct-08 12:20:21.145 [Task submitter] INFO  nextflow.Session - [54/243cc1] Submitted process > align (amap:test_gapless:amap)
+Oct-08 12:20:21.150 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: align (muscle:test:muscle); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/be/650b939d995a7ac001d7cf4eb0f0a2]
+Oct-08 12:20:21.153 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (probcons:test:probcons); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ed/fd8cfc1d8f68bf017ee0c7cbb03466
+  error [nextflow.exception.ProcessFailedException]: Process `align (probcons:test:probcons)` terminated with an error exit status (1)
+Oct-08 12:20:21.156 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (muscle:test_gapless:muscle); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/9e/619f1b770f3b0242c53a13154d70f3
+  error [nextflow.exception.ProcessFailedException]: Process `align (muscle:test_gapless:muscle)` terminated with an error exit status (1)
+Oct-08 12:20:21.161 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (kalign:test:kalign); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/3c/4c6b3035b0ed980ee5c1359672c339
+  error [nextflow.exception.ProcessFailedException]: Process `align (kalign:test:kalign)` terminated with an error exit status (1)
+Oct-08 12:20:21.166 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: align (clustalo:test:clustalo); status: COMPLETED; exit: 1; error: -; workDir: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/93/7d49733585d0bf3661122c60f635ee]
+Oct-08 12:20:21.164 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (t_coffee:test:t_coffee); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/0e/bf3d2351b08138952373c17e36c0bb
+  error [nextflow.exception.ProcessFailedException]: Process `align (t_coffee:test:t_coffee)` terminated with an error exit status (1)
+Oct-08 12:20:21.169 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.170 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (amap:test:amap); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/4e/0e5ae94f21995df7a10ce56d90d8e9
+  error [nextflow.exception.ProcessFailedException]: Process `align (amap:test:amap)` terminated with an error exit status (1)
+Oct-08 12:20:21.171 [Task submitter] INFO  nextflow.Session - [52/0ad930] Submitted process > align (prank:test:prank)
+Oct-08 12:20:21.171 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (kalign:test_gapless:kalign); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/c0/7f4a9564261b4420c0bf987a6780ec
+  error [nextflow.exception.ProcessFailedException]: Process `align (kalign:test_gapless:kalign)` terminated with an error exit status (1)
+Oct-08 12:20:21.175 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `align (t_coffee:test_gapless:t_coffee)` terminated with an error exit status (1)
+Oct-08 12:20:21.175 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (clustalw:test:clustalw); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/1a/e99f64e2e4d3e39950f6a21b37759e
+  error [nextflow.exception.ProcessFailedException]: Process `align (clustalw:test:clustalw)` terminated with an error exit status (255)
+Oct-08 12:20:21.179 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (clustalw:test_gapless:clustalw); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/ff/12766145bf306344eb6e156e862723
+  error [nextflow.exception.ProcessFailedException]: Process `align (clustalw:test_gapless:clustalw)` terminated with an error exit status (255)
+Oct-08 12:20:21.181 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (clustalo:test_gapless:clustalo); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/45/19ba5c0b6c0a7b3b42581e56af6232
+  error [nextflow.exception.ProcessFailedException]: Process `align (clustalo:test_gapless:clustalo)` terminated with an error exit status (1)
+Oct-08 12:20:21.182 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-08 12:20:21.182 [Task submitter] INFO  nextflow.Session - [50/996aec] Submitted process > align (prank:test_gapless:prank)
+Oct-08 12:20:21.187 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (muscle:test:muscle); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/be/650b939d995a7ac001d7cf4eb0f0a2
+  error [nextflow.exception.ProcessFailedException]: Process `align (muscle:test:muscle)` terminated with an error exit status (1)
+Oct-08 12:20:21.189 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=align (clustalo:test:clustalo); work-dir=/home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/work/93/7d49733585d0bf3661122c60f635ee
+  error [nextflow.exception.ProcessFailedException]: Process `align (clustalo:test:clustalo)` terminated with an error exit status (1)
+Oct-08 12:20:21.201 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-08 12:20:21.229 [TaskFinalizer-2] DEBUG nextflow.Session - The following nodes are still active:
+[process] rustyMetal
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] graphs
+  status=ACTIVE
+  port 0: (value) bound ; channel: main_graphing_file
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+Oct-08 12:20:21.241 [TaskFinalizer-2] WARN  n.processor.TaskPollingMonitor - Killing running tasks (8)
+Oct-08 12:20:21.256 [TaskFinalizer-2] DEBUG n.executor.local.LocalTaskHandler - Unable to kill align (mafft_linsi:test_gapless:mafft) -- command: kill -TERM 16034; exit: 1 
+ bash: line 1: kill: (16034) - No such process
+
+Oct-08 12:20:21.273 [TaskFinalizer-2] DEBUG n.executor.local.LocalTaskHandler - Unable to kill align (mafft_linsi:test:mafft) -- command: kill -TERM 16082; exit: 1 
+ bash: line 1: kill: (16082) - No such process
+
+Oct-08 12:20:21.290 [TaskFinalizer-2] DEBUG n.executor.local.LocalTaskHandler - Unable to kill align (probcons:test_gapless:probcons) -- command: kill -TERM 16246; exit: 1 
+ bash: line 1: kill: (16246) - No such process
+
+Oct-08 12:20:21.308 [TaskFinalizer-2] DEBUG n.executor.local.LocalTaskHandler - Unable to kill align (amap:test_gapless:amap) -- command: kill -TERM 16271; exit: 1 
+ bash: line 1: kill: (16271) - No such process
+
+Oct-08 12:20:21.331 [TaskFinalizer-2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=12; ignoredCount=0; cachedCount=0; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=8; succeedDuration=0ms; failedDuration=296ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=18; peakCpus=18; peakMemory=0; ]
+Oct-08 12:20:21.366 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-08 12:20:21.366 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-08 12:20:21.370 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=12; ignoredCount=0; cachedCount=0; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=8; succeedDuration=0ms; failedDuration=296ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=18; peakCpus=18; peakMemory=0; ]
+Oct-08 12:20:21.379 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-08 12:20:21.418 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

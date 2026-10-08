@@ -79,3 +79,7 @@
 2026-09-11 19:57:32	1.7s	happy_mahavira	OK	ac71f09b9b9edc8cf8703538b1ae0b18	bd70a2d1-b212-4df2-aef8-6b9b8ce9bec4	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'major h'
 2026-09-11 20:05:50	2.1s	disturbed_ride	OK	ac71f09b9b9edc8cf8703538b1ae0b18	68dacfec-dc57-4e85-ae37-9ea0c256b74a	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'major h'
 2026-09-11 20:06:53	1.7s	agitated_cantor	OK	ac71f09b9b9edc8cf8703538b1ae0b18	0675ec53-1b8d-4ed1-9f5b-4097d2a51ff9	nextflow data-acquisition.nf -c dataac.config --seqkitToSearch 'major h'
+2026-10-08 12:20:19	2.4s	mad_koch	ERR	2c8f22dc961efe8d74ba436768a6100d	fe1cd061-62e9-411f-b59e-99697e52946b	nextflow msa-comparison.nf
+2026-10-08 12:21:08	3s	sick_linnaeus	ERR	41eb5af033189c5d520a2c8100ba0a7e	e77bfeff-2b8b-4459-9d9a-02c733ed0358	nextflow msa-comparison.nf
+2026-10-08 12:21:47	7.3s	stupefied_wescoff	OK	41eb5af033189c5d520a2c8100ba0a7e	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf
+2026-10-08 13:40:14	6.8s	deadly_maxwell	OK	0c6b5e7479d5c6f224436009ae6e0d1f	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume

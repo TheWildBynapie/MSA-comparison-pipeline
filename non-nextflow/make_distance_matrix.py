@@ -7,6 +7,31 @@ import argparse
 #My modules
 import mds, hierarchical_clustering
 
+"""Writes the following to a text file:
+    MDS stress value
+    average dPos between all pairs of MSAs
+    For each MSA tool, the sum of its dPos values to all other tools, sorted from smallest to largest
+    - this essentially tells you 'which MSA is the most similar to all others'
+    * The latter 2 details, are inspired by MUMSA (2005)
+    """
+def write_summary(D, points, stress, output_file):
+    n = len(points)
+    # Only count each pair once (upper triangle, excluding the zero diagonal)
+    i_upper, j_upper = np.triu_indices(n, k=1)
+    pairwise_dpos = D[i_upper, j_upper]
+    avg_dpos = pairwise_dpos.mean()
+
+    # Per-tool total: sum of that tool's row (its distance to every other tool)
+    tool_sums = [(points[i], D[i, :].sum()) for i in range(n)]
+    tool_sums.sort(key=lambda pair: pair[1])  # smallest sum first
+
+    with open(output_file, "w") as f:
+        f.write(f"MDS stress: {stress}\n")
+        f.write(f"Average dPos: {avg_dpos}\n\n")
+        f.write("MSA tool dPos sums (smallest to largest):\n")
+        for tool, total in tool_sums:
+            f.write(f"{tool}\t{total}\n")
+
 #Args
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", help="The input csv file containing the pairwise distances between MSAs", required=False)
@@ -65,6 +90,7 @@ if args.np_intermediate:
 
 #If doing everything in one go, do that
 else:
-    mds.mds_and_plot(D, points, output_file=f"{output_dir}/MSA_distances.png")
+    stress = mds.mds_and_plot(D, points, output_file=f"{output_dir}/MSA_distances.png")
     hierarchical_clustering.hierarchical_and_plot(D, points, output_file=f"{output_dir}/MSA_hierarchical.png")
+    write_summary(D, points, stress, output_file=f"{output_dir}/MSA_summary.txt")
     

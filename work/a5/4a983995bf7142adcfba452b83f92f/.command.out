@@ -1,0 +1,245 @@
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] This is rusty-metAL version 1.0.0
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] Computing the distance between the following MSAs, and writing the output to rusty_metal_test.csv and using 0 threads. Standardisation is on.
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > clustalw.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > kalign.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > probcons.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > muscle.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > clustalo.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > amap.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > fsa.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > t_coffee.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > mafft_linsi.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > mafft_auto.fasta
+2026-10-08T10:21:50.018Z INFO  [rusty_metal] > prank.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: clustalw.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: amap.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: probcons.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: clustalo.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: muscle.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: kalign.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: t_coffee.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: fsa.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: mafft_linsi.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: prank.fasta
+2026-10-08T10:21:50.020Z INFO  [rusty_metal::msa] Reading msa file: mafft_auto.fasta
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 28/192 = 0.14583333333333334
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 94/192 = 0.4895833333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 80/192 = 0.4166666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 3 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 84/192 = 0.4375
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> clustalo: 0.14583333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 11 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> muscle: 0.4375
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 1 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> probcons: 0.4895833333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 2 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 12 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> muscle: 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 88/192 = 0.4583333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 18 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 68/192 = 0.3541666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> prank: 0.4583333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 28/192 = 0.14583333333333334
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 94/192 = 0.4895833333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 13 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 112/192 = 0.5833333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> amap: 0.4895833333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 80/192 = 0.4166666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 6 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 0 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 100/192 = 0.5208333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 21 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 34/192 = 0.17708333333333334
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 28/192 = 0.14583333333333334
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 8 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> clustalo: 0.3333333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 19 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 64/192 = 0.3333333333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 40/192 = 0.20833333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> muscle: 0.3333333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 20 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 10 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> clustalo: 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 17 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 24 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> mafft_auto: 0.3333333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 4 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> mafft_linsi: 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> t_coffee: 0.5833333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> amap: 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> kalign: 0.4166666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 120/192 = 0.625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 27 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 28 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> clustalo: 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> amap: 0.625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 25 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> mafft_auto: 0.4791666666666667
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 84/192 = 0.4375
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 31 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 29 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 30 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> mafft_linsi: 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> t_coffee: 0.4375
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> fsa: 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 96/192 = 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 33 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 102/192 = 0.53125
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> amap: 0.5208333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 9 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 7 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 15 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> mafft_linsi: 0.14583333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> prank: 0.17708333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 16 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 0/192 = 0
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> t_coffee: 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 37 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> mafft_linsi: 0
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> mafft_linsi: 0.3333333333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 0/192 = 0
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 38 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 94/192 = 0.4895833333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> mafft_auto: 0
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 40 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 102/192 = 0.53125
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 120/192 = 0.625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 42 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> probcons: 0.4166666666666667
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 88/192 = 0.4583333333333333
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 34/192 = 0.17708333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 5 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 34 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 39 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> fsa: 0.20833333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> amap: 0.53125
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 14 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 98/192 = 0.5104166666666666
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 46/192 = 0.23958333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> prank: 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 36 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] amap -> fsa: 0.4895833333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 23 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> t_coffee: 0.5625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 12/192 = 0.0625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 26 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 102/192 = 0.53125
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> prank: 0.4583333333333333
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 12/192 = 0.0625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 35 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 47 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] kalign -> fsa: 0.3541666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 45 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> prank: 0.17708333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 49 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 44 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 43 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] amap -> mafft_auto: 0.53125
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalw -> mafft_auto: 0.14583333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] amap -> prank: 0.5104166666666666
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 38/192 = 0.19791666666666666
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 41 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 48 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] fsa -> t_coffee: 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] fsa -> prank: 0.19791666666666666
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] t_coffee -> mafft_linsi: 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] amap -> t_coffee: 0.625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 92/192 = 0.4791666666666667
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 108/192 = 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 32 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 51 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] t_coffee -> prank: 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] muscle -> mafft_auto: 0.5
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] fsa -> mafft_auto: 0.0625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> t_coffee: 0.23958333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] amap -> mafft_linsi: 0.53125
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] clustalo -> fsa: 0.0625
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 12/192 = 0.0625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 22 complete.
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 34/192 = 0.17708333333333334
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 54 complete.
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] probcons -> fsa: 0.4791666666666667
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] mafft_auto -> prank: 0.17708333333333334
+2026-10-08T10:21:50.021Z DEBUG [rusty_metal::distance] Symmetric difference: 0/192 = 0
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] Comparison 52 complete.
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] mafft_linsi -> mafft_auto: 0
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 50 complete.
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] t_coffee -> mafft_auto: 0.5625
+2026-10-08T10:21:50.021Z INFO  [rusty_metal::distance] Computing Symmetric Difference
+2026-10-08T10:21:50.021Z INFO  [rusty_metal] Comparison 46 complete.
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] fsa -> mafft_linsi: 0.0625
+2026-10-08T10:21:50.022Z DEBUG [rusty_metal::distance] Symmetric difference: 34/192 = 0.17708333333333334
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] Comparison 53 complete.
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] mafft_linsi -> prank: 0.17708333333333334
+2026-10-08T10:21:50.022Z INFO  [rusty_metal] Writing output to rusty_metal_test.csv

@@ -1,0 +1,2 @@
+ERROR: Failed to open sequence file test.fasta for reading
+FATAL: Reading sequence file 'test.fasta' failed

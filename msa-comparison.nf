@@ -10,7 +10,7 @@ include { graphs } from './modules/graphing.nf'
 * The parameter values here are examples. They are overridden by the config file.
 */
 params {
-    inputs: List<String> = ['data/test_gapless.fasta']
+    inputs: List<String> = ['testdata/test_gapless.fasta']
     runs: List<String> = [
         /*Each line defines a run of a MSA tool.
         * Run names are arbitrary, but must be unique. They are used in the output file names.
@@ -65,6 +65,7 @@ workflow {
     rustyMetal   = rustyMetal.output
     MDS          = graphs.out.MDS
     hierarchical = graphs.out.hierarchical
+    summary      = graphs.out.summary
 }
 
 output {
@@ -81,5 +82,9 @@ output {
     }
     hierarchical {
         path 'MSA_graphs'
+    }
+    summary {
+        path 'MSA_graphs'
+        mode 'copy'
     }
 }

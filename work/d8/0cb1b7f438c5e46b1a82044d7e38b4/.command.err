@@ -1,0 +1,12 @@
+/usr/bin/mafft: Cannot open test.fasta.
+
+/usr/bin/mafft: line 1291: mafft.LTxOiA61eA/infile: No such file or directory
+awk: fatal: cannot open file `mafft.LTxOiA61eA/size' for reading: No such file or directory
+awk: fatal: cannot open file `mafft.LTxOiA61eA/size' for reading: No such file or directory
+/usr/bin/mafft: line 1295: [: too many arguments
+/usr/bin/mafft: line 1300: [: too many arguments
+/usr/bin/mafft: line 1305: [: too many arguments
+/usr/bin/mafft: line 1310: [: -lt: unary operator expected
+/usr/bin/mafft: line 1315: [: -lt: unary operator expected
+/usr/bin/mafft: line 1322: [: -lt: unary operator expected
+/usr/bin/mafft: line 1329: [: -lt: unary operator expected
