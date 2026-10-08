@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 //e.g:
-//nextflow data-acquisition.nf -c dataac.config --seqkitToSearch "Cytochrome c oxidase subunit I"
+//nextflow data-acquisition.nf -c dataac.config --seqkitToSearch "cytochrome c oxidase subunit I"
 
 
 /*You need to specify what seqkit must look for in the headers
@@ -16,6 +16,8 @@ params {
 
 workflow {
     main:
+
+    println "seqkitToSearch = '${params.seqkitToSearch}'"
 
     input_ch = channel.fromList(params.fasta)
         .map { f -> file(f) }
@@ -48,7 +50,7 @@ process seqkit_grep {
 
     script:
     """
-    seqkit grep -r -n -i -p ${seqkitToSearch} ${fasta} | seqkit grep -r -n -p "\\[*\\]" > seqkit_${fasta}
+    seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" | seqkit grep -r -n -p "\\[*\\]" > seqkit_${fasta}
     """
 }
 
@@ -63,7 +65,7 @@ process seqtk_sample {
 
     script:
     """
-    seqtk sample -s100 ${fasta} ${sampleSize} > ${fasta.baseName}_${sampleSize}seq.fasta
+    seqtk sample -s100 "${fasta}" ${sampleSize} > ${fasta.baseName}_${sampleSize}seq.fasta
     """
 }
 
