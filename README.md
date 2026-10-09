@@ -38,6 +38,6 @@ Typical workflow:
 
 ### Abandoned aligners
 | Name          | Notes |
-| ------------- | ----- |
-| MUSTANG       |Mustang takes .pdb input so not applicable to this pipeline|
-| TM-align      |Same as mustang|
+| ------------- | --------------------- |
+| Any structural aligner | those take .pdb input instead of .fasta |
+| UPP2 | I could not install it despite trying for 2 hours. Those people really need to improve their software. |
