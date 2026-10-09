@@ -31,6 +31,7 @@ Typical workflow:
 | Kalign        |3.4.0|                           |yes|need 3.5.1 as of 30/08/2026|
 | MAFFT         |v7.526|30/08/2026|yes| |
 | MUSCLE        |5.3.linux64|30/08/2026|yes| |
+| PAGAN | | | yes | Ari is a legend for making it so easy to install |
 | POA           |                |                           |n/a|Same issue as dialign|
 | PRANK         |v.250331|                           |yes| |
 | ProbCons      |1.12|30/08/2026|yes| |
