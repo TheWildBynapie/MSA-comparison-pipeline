@@ -43,3 +43,4 @@ Typical workflow:
 | ------------- | --------------------- |
 | Any structural aligner | those take .pdb input instead of .fasta |
 | UPP2 | I could not install it despite trying for 2 hours. Those people really need to improve their software. |
+| MLProbs | same as UPP2. Genuinely disgusting handling of software, the readmes are so bad |
