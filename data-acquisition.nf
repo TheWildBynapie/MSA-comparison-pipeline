@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 //e.g:
-//nextflow data-acquisition.nf -c dataac.config --seqkitToSearch "cytochrome c oxidase subunit I"
+//nextflow data-acquisition.nf -c dataac.config 
 
 
 /*You need to specify what seqkit must look for in the headers
@@ -9,31 +9,31 @@
 * Don't forget to override the default config file: -c "dataac.config"
 */
 params {
-    fasta: List<String> = ['data/sequence.fasta']
+    sources: List<String> = ['data/sequence.fasta:Seq']
     sampleSize: Integer = 50
-    seqkitToSearch: String
 }
 
 workflow {
     main:
 
-    println "seqkitToSearch = '${params.seqkitToSearch}'"
+    input_ch = channel.fromList(params.sources)
+        .map { entry ->
+            def (path, searchTerm) = entry.split(':', 2)
+            tuple(file(path), searchTerm)
+        }
 
-    input_ch = channel.fromList(params.fasta)
-        .map { f -> file(f) }
-
-    seqkit_grep(input_ch, params.seqkitToSearch)
+    seqkit_grep(input_ch)
     seqtk_sample(seqkit_grep.out, params.sampleSize)
 
     publish:
-    seqkit_grep = seqkit_grep.out
+    //seqkit_grep = seqkit_grep.out
     seqtk_sample = seqtk_sample.out
 }
 
 output {
-    seqkit_grep {
-        path 'seqkit'
-    }
+    // seqkit_grep {
+    //     path 'seqkit'
+    // }
     seqtk_sample {
         path 'seqkit'
     }
@@ -42,15 +42,14 @@ output {
 process seqkit_grep {
 
     input:
-    path fasta
-    val seqkitToSearch
+    tuple path(fasta), val(seqkitToSearch)
 
     output:
-    path "seqkit_${fasta}"
+    path "${fasta}"
 
     script:
     """
-    seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" | seqkit grep -r -n -p "\\[*\\]" > seqkit_${fasta}
+    seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" | seqkit grep -r -n -p "\\[*\\]" > ${fasta}
     """
 }
 

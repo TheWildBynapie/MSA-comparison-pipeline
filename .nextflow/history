@@ -83,3 +83,37 @@
 2026-10-08 12:21:08	3s	sick_linnaeus	ERR	41eb5af033189c5d520a2c8100ba0a7e	e77bfeff-2b8b-4459-9d9a-02c733ed0358	nextflow msa-comparison.nf
 2026-10-08 12:21:47	7.3s	stupefied_wescoff	OK	41eb5af033189c5d520a2c8100ba0a7e	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf
 2026-10-08 13:40:14	6.8s	deadly_maxwell	OK	0c6b5e7479d5c6f224436009ae6e0d1f	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume
+2026-10-08 14:26:19	8.5s	evil_cuvier	OK	0c6b5e7479d5c6f224436009ae6e0d1f	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume
+2026-10-08 14:58:39	2.4s	nauseous_neumann	ERR	2abd9a6255ff1f1f183da7f843e0c0db	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume
+2026-10-08 15:00:06	2.3s	irreverent_venter	ERR	3a5669e7a50629503088e19d77a881f2	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume
+2026-10-08 15:01:44	6.9s	fabulous_bohr	OK	04b5d9730cde2e596dfa374f04fc7416	c80ed124-2932-4d1b-8b7f-33bcf75c8069	nextflow msa-comparison.nf -resume
+2026-10-08 20:45:54	2m 31s	pensive_koch	ERR	04b5d9730cde2e596dfa374f04fc7416	d0f3845e-80cf-4dc3-ae91-54aeebe3730f	nextflow msa-comparison.nf -profile all50seqs
+2026-10-08 20:53:32	2m 15s	hungry_wilson	OK	04b5d9730cde2e596dfa374f04fc7416	66a34ee4-1f0d-44aa-b413-a50b38e96e5d	nextflow msa-comparison.nf -profile all50seqs
+2026-10-11 12:56:05	1.7s	exotic_raman	OK	5b15d699911a328178460d91b3e0c135	ff5f7c8d-52ce-48e9-a544-68d86e03550d	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 12:57:58	1.5s	lethal_ritchie	ERR	6e4c7cf4deafb8ed5a909617b59b4873	e9ff0978-f436-4306-b569-f886a8c30cc8	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 12:58:20	1.6s	nauseous_swartz	OK	8396ecb726a7c5d04e1aedc3245f3680	605ff92e-5af8-4e1a-a68b-1cfd5b2ba23d	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 13:00:47	2.2s	sharp_colden	OK	8396ecb726a7c5d04e1aedc3245f3680	793afb26-8b61-42e0-af19-b7f15157a526	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 13:02:51	-	desperate_carlsson	-	9cab9d070750fdaba3c0d123af1cd93b	421c21a9-d31b-4269-8577-e75e2bcb4289	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 13:03:19	-	zen_wilson	-	9cab9d070750fdaba3c0d123af1cd93b	1b907018-0130-4a73-8ef7-744b4f73104e	nextflow data-acquisition.nf -c dataac.config
+2026-10-11 13:04:22	2.6s	dreamy_bell	OK	5ba921138eb0c48ce134df0ffa12f57f	df0e9f1d-b77d-4f04-91b0-16d4a558e40d	nextflow data-acquisition.nf -c dataac.config
+2026-10-12 09:33:55	3.6s	high_wing	ERR	04b5d9730cde2e596dfa374f04fc7416	e41d56ba-7fef-4aa4-a29e-e83b39843527	nextflow msa-comparison.nf
+2026-10-12 09:37:34	1m 48s	berserk_aryabhata	ERR	04b5d9730cde2e596dfa374f04fc7416	3a92f613-fc7b-4b8c-a3d4-fe32b71deddf	nextflow msa-comparison.nf
+2026-10-12 09:40:07	8.8s	clever_stone	OK	04b5d9730cde2e596dfa374f04fc7416	bb9520e0-bcb9-4332-8a05-93704b9559e3	nextflow msa-comparison.nf
+2026-10-12 10:33:34	10.6s	confident_noether	ERR	04b5d9730cde2e596dfa374f04fc7416	9f640a65-6570-4393-afea-9992ef01e2d0	nextflow msa-comparison.nf
+2026-10-12 10:36:26	9s	hopeful_curie	ERR	04b5d9730cde2e596dfa374f04fc7416	c4759e45-369a-4e22-8555-97a554d8a5f4	nextflow msa-comparison.nf
+2026-10-12 10:37:02	9.1s	admiring_swirles	ERR	04b5d9730cde2e596dfa374f04fc7416	6dc5720e-40e1-4374-8a85-153fbd0d45c3	nextflow msa-comparison.nf
+2026-10-12 10:41:22	9.1s	lonely_hodgkin	ERR	04b5d9730cde2e596dfa374f04fc7416	ae893289-58b0-4333-b248-51a1cb73f417	nextflow msa-comparison.nf
+2026-10-12 10:43:18	9.7s	cranky_pasteur	ERR	04b5d9730cde2e596dfa374f04fc7416	12d0c46f-62db-4f51-8129-c548f767f219	nextflow msa-comparison.nf
+2026-10-12 10:51:13	12.6s	soggy_dubinsky	OK	04b5d9730cde2e596dfa374f04fc7416	b80a1be4-9054-4453-937f-7a77a89fe086	nextflow msa-comparison.nf
+2026-10-12 12:10:37	34.5s	special_bassi	ERR	04b5d9730cde2e596dfa374f04fc7416	f4823cb4-bdaf-4474-9444-6276d3e20050	nextflow msa-comparison.nf -profile all50seqs
+2026-10-12 12:11:29	12.9s	chaotic_gates	OK	04b5d9730cde2e596dfa374f04fc7416	239aff74-71f3-4965-88a1-e42beaf2c15c	nextflow msa-comparison.nf
+2026-10-12 12:51:57	1m 53s	kickass_ritchie	ERR	04b5d9730cde2e596dfa374f04fc7416	3f1c8f44-a319-4d2e-ba80-7c47630a81c6	nextflow msa-comparison.nf -profile all50seqs
+2026-10-12 12:54:08	3m 36s	silly_tesla	OK	04b5d9730cde2e596dfa374f04fc7416	ee5cd984-046b-4c23-8ca9-a5669fddd543	nextflow msa-comparison.nf -profile all50seqs
+2026-10-12 15:36:41	3.5s	elated_wegener	ERR	04b5d9730cde2e596dfa374f04fc7416	87d82987-c461-4805-a7a3-d316ea689e9e	nextflow msa-comparison.nf
+2026-10-12 15:45:20	4s	determined_magritte	ERR	04b5d9730cde2e596dfa374f04fc7416	2150195a-b98e-4437-ba9a-3b6f395bb815	nextflow msa-comparison.nf
+2026-10-12 15:47:03	3.4s	voluminous_picasso	ERR	04b5d9730cde2e596dfa374f04fc7416	9831cb92-7e0c-4528-b5bd-9a3ed8039390	nextflow msa-comparison.nf
+2026-10-12 15:54:33	3s	suspicious_noether	ERR	04b5d9730cde2e596dfa374f04fc7416	d75b4522-a9fc-461b-82d8-13fe1e9fe49e	nextflow msa-comparison.nf
+2026-10-12 16:01:35	4.6s	elegant_mestorf	ERR	04b5d9730cde2e596dfa374f04fc7416	9a5f81ac-cf00-461f-8aa5-7a35488ad319	nextflow msa-comparison.nf
+2026-10-12 16:06:35	-	condescending_ptolemy	-	04b5d9730cde2e596dfa374f04fc7416	20233645-ae4f-43b3-8252-14d70e8d45dc	nextflow msa-comparison.nf
+2026-10-12 16:13:08	14.6s	drunk_kilby	ERR	04b5d9730cde2e596dfa374f04fc7416	20233645-ae4f-43b3-8252-14d70e8d45dc	nextflow msa-comparison.nf -resume
+2026-10-12 16:19:14	4.5s	confident_sinoussi	ERR	04b5d9730cde2e596dfa374f04fc7416	20233645-ae4f-43b3-8252-14d70e8d45dc	nextflow msa-comparison.nf -resume
