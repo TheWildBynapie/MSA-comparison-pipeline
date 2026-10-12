@@ -3,3 +3,4 @@ data/
 .nextflow.log*
 work/
 results/
+.nextflow/cache/

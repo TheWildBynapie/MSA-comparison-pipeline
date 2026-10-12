@@ -1,0 +1,61 @@
+2026-10-12 15:21:10    Task for /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/magus.fasta threw an exception:
+unsupported operand type(s) for +: 'int' and 'NoneType'
+2026-10-12 15:21:10    Traceback (most recent call last):
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+    ~~~~~~~~~~^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/graph_build/graph_builder.py", line 38, in buildGraph
+    context.graph.initializeMatrix()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/alignment_graph.py", line 50, in initializeMatrix
+    self.matrixSize = sum(self.subalignmentLengths)
+                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+2026-10-12 15:21:10    Task manager found a failed task: /home/byna/Documents/Code/Project/pipeline/MSA-comparison-pipeline/magus.fasta
+2026-10-12 15:21:10    MAGUS aborted with an exception..
+2026-10-12 15:21:10    Traceback (most recent call last):
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/main.py", line 31, in main
+    mainAlignmentTask()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/aligner.py", line 30, in mainAlignmentTask
+    task.awaitTask()
+    ~~~~~~~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/task.py", line 47, in awaitTask
+    awaitTasks([self])
+    ~~~~~~~~~~^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/controller.py", line 53, in observeTaskManager
+    runTask(task)
+    ~~~~~~~^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+    ~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+    ~~~~~~~~~~^^^^^^^^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/graph_build/graph_builder.py", line 38, in buildGraph
+    context.graph.initializeMatrix()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/byna/Documents/Code/Project/pipeline/sklearn-env/lib/python3.14/site-packages/magus/align/merge/alignment_graph.py", line 50, in initializeMatrix
+    self.matrixSize = sum(self.subalignmentLengths)
+                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
