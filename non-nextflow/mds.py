@@ -17,15 +17,37 @@ def mds_and_plot(distance_matrix, points, output_file='MSA_distances.png'):
     coords = mds.fit_transform(distance_matrix)
     stress = mds.stress_
 
-    print(f"Stress: {stress}")
+    # Plot setup
+    plt.figure(figsize=(10, 8))
+    
+    # Draw edges to the 3 closest points based on original distance matrix D
+    for i, (x, y) in enumerate(coords):
+        # Get distances from point i to all other points, sort them, and pick top 3 (skip index 0 which is self)
+        closest_indices = np.argsort(distance_matrix[i])[1:4]
+        
+        for j in closest_indices:
+            x_near, y_near = coords[j]
+            dist_val = distance_matrix[i][j]
+            
+            # Draw a light dashed line between the points
+            plt.plot([x, x_near], [y, y_near], 'k--', alpha=0.2, linewidth=1)
+            
+            # Optional: Add distance label near the midpoint of the line
+            plt.text(
+                (x + x_near) / 2, (y + y_near) / 2, 
+                f"{dist_val:.3f}", 
+                fontsize=7, color='blue', alpha=0.7,
+                ha='center', va='center'
+            )
 
-    # Plot
-    plt.scatter(coords[:, 0], coords[:, 1])
+    # Plot points
+    plt.scatter(coords[:, 0], coords[:, 1], zorder=3)
 
+    # Annotate point labels
     for msa, (x, y) in zip(points, coords):
-        plt.annotate(msa, (x, y))
+        plt.annotate(msa, (x, y), textcoords="offset points", xytext=(0, 5), ha='center', zorder=4)
 
-    plt.savefig(output_file, dpi=200)
+    plt.savefig(output_file, dpi=200, bbox_inches='tight')
     plt.close()
     
     return stress
