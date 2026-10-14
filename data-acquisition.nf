@@ -9,7 +9,7 @@
 * Don't forget to override the default config file: -c "dataac.config"
 */
 params {
-    sources: List<String> = ['data/sequence.fasta:Seq']
+    sources: List<String> = ['data/raw/sequence.fasta:Seq']
     sampleSize: Integer = 50
 }
 
@@ -20,7 +20,7 @@ workflow {
         .map { entry ->
             def (path, searchTerm) = entry.split(':', 2)
             tuple(file(path), searchTerm)
-        }
+        }.view()
 
     seqkit_grep(input_ch)
     seqtk_sample(seqkit_grep.out, params.sampleSize)
@@ -45,12 +45,17 @@ process seqkit_grep {
     tuple path(fasta), val(seqkitToSearch)
 
     output:
-    path "${fasta}"
+    path "${fasta}-pruned"
 
     script:
-    """
-    seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" | seqkit grep -r -n -p "\\[*\\]" > ${fasta}
-    """
+    if (fasta.name.contains("SwissProt"))
+        """
+        seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" > "${fasta}-pruned"
+        """
+    else
+        """
+        seqkit grep -r -n -i -p "${seqkitToSearch}" "${fasta}" | seqkit grep -r -n -p "\\[*\\]" > "${fasta}-pruned"
+        """
 }
 
 process seqtk_sample {
@@ -64,7 +69,7 @@ process seqtk_sample {
 
     script:
     """
-    seqtk sample -s100 "${fasta}" ${sampleSize} > ${fasta.baseName}_${sampleSize}seq.fasta
+    seqtk sample -s100 ${fasta} ${sampleSize} > ${fasta.baseName}_${sampleSize}seq.fasta
     """
 }
 

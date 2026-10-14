@@ -34,10 +34,13 @@ params {
 
 workflow {
     main:
-
-    //Each input fasta file becomes a tuple of (sample_id, fasta_path)
     input_ch = channel.fromList(params.inputs)
-        .map { f -> tuple(file(f).simpleName, file(f)) }
+        .map { entry ->
+            def parts = entry.split(':', 2)
+            def unaligned = parts[0]
+            def reference = parts.size() > 1 ? parts[1] : null
+            tuple(file(unaligned).simpleName, file(unaligned), reference ? file(reference) : null)
+    }
 
     //Each run is a tuple of (run_id, tool, options)
     run_ch = channel.fromList(params.runs)
@@ -48,13 +51,19 @@ workflow {
 
     // cross product: every (run, sample_id / fasta) combination
     combos = run_ch.combine(input_ch)
-        .map { run_id, tool, options, sample_id, fasta -> tuple(run_id, tool, options, sample_id, fasta) }
+        .map { run_id, tool, options, sample_id, fasta, reference -> tuple(run_id, tool, options, sample_id, fasta) }
 
     //Align everything
     align(combos)
 
+    //Build a (sample_id, 'reference', path) entry for every input that specified one
+    reference_ch = input_ch
+        .filter { sample_id, fasta, reference -> reference != null }
+        .map { sample_id, fasta, reference -> tuple(sample_id, reference) }
+
     //Regroup alignments by the fasta file/sample_id
     alignments_by_sample = align.out.alignment
+        .mix(reference_ch)
         .groupTuple()          // → (sample_id, [fasta1, fasta2, ..., fastaN])  -- one emission PER input file
 
     //Run rusty-metal, and then graphing on each group of alignments

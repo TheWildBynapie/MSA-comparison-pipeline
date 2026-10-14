@@ -23,7 +23,8 @@ def hierarchical_and_plot(distance_matrix, points, output_file='MSA_hierarchical
 
     dendrogram(
         Z,
-        labels=points
+        labels=points,
+        leaf_rotation=50,
     )   
 
     plt.ylabel("Distance")
