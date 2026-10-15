@@ -31,4 +31,18 @@ seqkit grep -r -n -i -p "histone h3" input.fasta | seqkit grep -r -n -p "\[*\]" 
 seqtk sample -s100 output.fasta 50 > subset.fasta
 ```
 
-### 
+## BLASTp data
+
+| protein class name| Procedure | ncbi search | seqkit command | Notes |
+| ------------------------ | --- | ------------------------------------ | ------------------------- | ------------------------ |
+
+### Procedure 2: UniProtKB and BLASTp 
+1. Go to [UniProtKB](https://www.uniprot.org/)
+2. Search for the chosen gene, e.g `human p53`
+3. Filter by Swiss-prot
+4. Select the first option (given its reasonable) here `P04637`, `P53_HUMAN`, `gene: TP53`
+5. Click 'sequence and isoforms' on the left, and copy the sequence
+6. Go to [BLASTp](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins)
+7. Enter the sequence,
+   database: clustered_nr,
+   algorithm parameters: Max target sequences: 5000
