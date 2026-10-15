@@ -68,3 +68,7 @@
 2026-10-15 10:55:18	3.2s	thirsty_hawking	ERR	c643bb544a58884277d644c42e7e2e07	4b3ab6d6-c331-48b2-95e0-38d040aef051	nextflow msa-comparison.nf -profile smallrun
 2026-10-15 10:56:23	2.8s	naughty_agnesi	ERR	c643bb544a58884277d644c42e7e2e07	743f8bfe-55c9-405a-a9bd-7c71a99508ab	nextflow msa-comparison.nf -profile smallrun
 2026-10-15 10:56:50	3s	disturbed_feynman	ERR	c643bb544a58884277d644c42e7e2e07	7ebfd8a3-6626-4033-a8ee-aa52e1666364	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 12:00:02	3m 35s	backstabbing_lamarr	OK	c643bb544a58884277d644c42e7e2e07	4ec6af3e-fc46-4331-b8c5-af5909fca5fc	nextflow msa-comparison.nf -profile mammals
+2026-10-15 12:11:41	2m 50s	amazing_borg	OK	c643bb544a58884277d644c42e7e2e07	e12d3ae8-0372-4ae4-aa3f-06aaa6d81ba4	nextflow msa-comparison.nf -profile animals
+2026-10-15 17:26:18	2.4s	furious_wing	ERR	c38119aa826b83e89da61d637e8cbf66	c3a76177-d374-485b-86a5-08bc3ba1972d	nextflow data-acquisition.nf -config dataac.config -profile ricecox1
+2026-10-15 17:27:10	2s	distracted_carlsson	OK	c38119aa826b83e89da61d637e8cbf66	f12fbaa7-b4ce-4d87-ab0b-a27d89f03668	nextflow data-acquisition.nf -config dataac.config -profile ricecox1
