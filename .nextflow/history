@@ -33,3 +33,38 @@
 2026-10-14 12:25:55	13.3s	prickly_wing	OK	23fca4eeda95e0ead4d684b255c31eea	bd921d5f-df59-4636-acb0-627f086b3fee	nextflow msa-comparison.nf
 2026-10-14 12:39:44	13.9s	gigantic_brenner	OK	23fca4eeda95e0ead4d684b255c31eea	9c38a6b2-4d76-4915-9cb5-8814eee65ef8	nextflow msa-comparison.nf
 2026-10-14 12:40:55	13.3s	focused_boyd	OK	23fca4eeda95e0ead4d684b255c31eea	f23e951c-af24-48b8-9bce-2118331cf39c	nextflow msa-comparison.nf
+2026-10-14 12:58:36	13.7s	amazing_hilbert	OK	23fca4eeda95e0ead4d684b255c31eea	eaa0c2e8-d4a1-4e2e-8c65-62beb5ed49b9	nextflow msa-comparison.nf
+2026-10-14 13:53:40	1m 8s	agitated_lamarck	OK	23fca4eeda95e0ead4d684b255c31eea	8e4a88f8-e847-40bf-8e46-230477f3074c	nextflow msa-comparison.nf -profile alisim1
+2026-10-14 13:58:41	3.3s	elated_solvay	ERR	23fca4eeda95e0ead4d684b255c31eea	7122a42b-616f-4213-961f-2ff10f10da88	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 14:01:21	3m 49s	tender_cori	OK	23fca4eeda95e0ead4d684b255c31eea	5f68be54-672c-4e4c-8e20-9bbc3a4f498e	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 16:36:38	1m 48s	loquacious_volhard	ERR	23fca4eeda95e0ead4d684b255c31eea	e50ade0c-37b7-4b60-a72a-ddb272f1b933	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 16:49:38	2.6s	desperate_hopper	ERR	23fca4eeda95e0ead4d684b255c31eea	5e9fe8ba-4a64-4e67-ad5f-c9ccf587fcf2	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 16:52:41	5.1s	distraught_fermat	ERR	23fca4eeda95e0ead4d684b255c31eea	0a9f4cf1-069c-4f00-9a1d-d779abc92e7b	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 16:54:53	2m 6s	peaceful_wiles	OK	23fca4eeda95e0ead4d684b255c31eea	8d39c0cc-1a19-4d95-97a3-3a2b0fb367b1	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 16:59:25	4m 6s	confident_lagrange	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 17:05:48	9m 25s	festering_lavoisier	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:17:11	44.1s	scruffy_wilson	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:20:01	41.6s	shrivelled_darwin	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:23:59	20.5s	furious_einstein	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:29:15	27.8s	soggy_leavitt	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:36:09	12.8s	romantic_mcclintock	ERR	23fca4eeda95e0ead4d684b255c31eea	f1f437e7-e20f-4c24-a151-50d5b98f22be	nextflow msa-comparison.nf -profile all50seqs -resume
+2026-10-14 17:36:50	8m 42s	silly_goldberg	ERR	23fca4eeda95e0ead4d684b255c31eea	49e3aae5-d266-43dd-9bde-67acc3689de3	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 17:46:07	7.1s	intergalactic_carlsson	ERR	23fca4eeda95e0ead4d684b255c31eea	89091577-cde5-4fdd-b147-747ecc40f37c	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 22:15:16	9.1s	determined_mercator	ERR	c643bb544a58884277d644c42e7e2e07	1fedaac7-360c-4d28-b111-031d1c47442a	nextflow msa-comparison.nf -profile all50seqs
+2026-10-14 22:16:06	22m 17s	thirsty_heyrovsky	ERR	c643bb544a58884277d644c42e7e2e07	a7cb03bc-90c5-4e33-8174-d49c72715719	nextflow msa-comparison.nf -profile all50seqs -with-trace -with-report
+2026-10-15 07:57:35	4.6s	angry_goodall	ERR	c643bb544a58884277d644c42e7e2e07	011f0455-6de6-41f1-95f2-ac0ed06f3871	nextflow msa-comparison.nf -profile all50seqs -with-trace -with-report
+2026-10-15 09:32:06	4.4s	elated_bassi	ERR	c643bb544a58884277d644c42e7e2e07	011f0455-6de6-41f1-95f2-ac0ed06f3871	nextflow msa-comparison.nf -resume -profile whyBaliPhy -with-trace -with-report
+2026-10-15 09:32:40	2m 35s	infallible_pesquet	OK	c643bb544a58884277d644c42e7e2e07	011f0455-6de6-41f1-95f2-ac0ed06f3871	nextflow msa-comparison.nf -resume -profile whyBaliPhy -with-trace -with-report
+2026-10-15 09:40:46	5m 36s	magical_escher	OK	c643bb544a58884277d644c42e7e2e07	011f0455-6de6-41f1-95f2-ac0ed06f3871	nextflow msa-comparison.nf -resume -profile whyFail -with-trace -with-report
+2026-10-15 10:16:18	3.3s	spontaneous_pike	ERR	c643bb544a58884277d644c42e7e2e07	afdfc496-0607-4689-97f1-021cddba604c	nextflow msa-comparison.nf
+2026-10-15 10:24:43	2.6s	cheesy_venter	ERR	c643bb544a58884277d644c42e7e2e07	141a4afd-d01b-477f-a17e-99b9b5858179	nextflow msa-comparison.nf
+2026-10-15 10:25:07	2.7s	infallible_lumiere	ERR	c643bb544a58884277d644c42e7e2e07	f1cbc37a-8e33-4a53-82ee-94b4b898b11c	nextflow msa-comparison.nf
+2026-10-15 10:34:04	3.4s	trusting_hirsch	ERR	c643bb544a58884277d644c42e7e2e07	d1e3322d-607c-4334-9adf-1f1c657092a7	nextflow msa-comparison.nf
+2026-10-15 10:39:08	2.7s	sharp_heisenberg	ERR	c643bb544a58884277d644c42e7e2e07	e3c64bce-b2ff-4102-8fba-618a93cdf84f	nextflow msa-comparison.nf
+2026-10-15 10:40:07	2.7s	furious_lichterman	ERR	c643bb544a58884277d644c42e7e2e07	dd3b81e0-cf05-4690-b14c-a461781a90fe	nextflow msa-comparison.nf
+2026-10-15 10:44:01	3.3s	disturbed_hamilton	ERR	c643bb544a58884277d644c42e7e2e07	7bd7b46f-49a9-4295-aa08-d837b7630c04	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 10:44:30	3s	dreamy_poincare	ERR	c643bb544a58884277d644c42e7e2e07	a0a059f0-8fad-43d3-aebc-f1d5f07593e0	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 10:48:24	3s	evil_lovelace	ERR	c643bb544a58884277d644c42e7e2e07	41aadb87-d4ea-45a4-a6c7-ed0d7e457e61	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 10:55:18	3.2s	thirsty_hawking	ERR	c643bb544a58884277d644c42e7e2e07	4b3ab6d6-c331-48b2-95e0-38d040aef051	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 10:56:23	2.8s	naughty_agnesi	ERR	c643bb544a58884277d644c42e7e2e07	743f8bfe-55c9-405a-a9bd-7c71a99508ab	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 10:56:50	3s	disturbed_feynman	ERR	c643bb544a58884277d644c42e7e2e07	7ebfd8a3-6626-4033-a8ee-aa52e1666364	nextflow msa-comparison.nf -profile smallrun

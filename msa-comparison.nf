@@ -64,7 +64,7 @@ workflow {
     //Regroup alignments by the fasta file/sample_id
     alignments_by_sample = align.out.alignment
         .mix(reference_ch)
-        .groupTuple()          // → (sample_id, [fasta1, fasta2, ..., fastaN])  -- one emission PER input file
+        .groupTuple()          //(sample_id, [fasta1, fasta2, ..., fastaN])  -- one emission PER input file
 
     //Run rusty-metal, and then graphing on each group of alignments
     rustyMetal(alignments_by_sample)
