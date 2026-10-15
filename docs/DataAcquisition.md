@@ -9,9 +9,9 @@ This doc contains explanations for how I acquired the data I used in testing the
 |Mammal Growth Hormone| 1 | | ```seqkit grep -r -n -i -p "growth hormone" input.fasta \| seqkit grep -r -n -p "\[*\]" > output.fasta``` | |
 |Mammal MHC| 1 | | ```seqkit grep -r -n -i -p "MHC" -p "major histocompatibility complex" input.fasta \| seqkit grep -r -n -p "\[*\]" > output.fasta``` | |
 |Animal Cytochrome c oxidase subunit I| 1 | | ```seqkit grep -r -n -i -p "Cytochrome c oxidase subunit I" input.fasta \| seqkit grep -r -n -p "\[*\]" > output.fasta``` | |
-| | 1 | (Histone H3) AND "animals"[porgn:__txid33208] AND srcdb_refseq[Properties] | | |
-| | 1 | (Histone h4) AND "eukaryotes"[porgn:__txid2759] | | |
-| | 1 | (p53) AND "eukaryotes"[porgn:__txid2759] | | |
+|Animal Histone H3 | 1 | (Histone H3) AND "animals"[porgn:__txid33208] AND srcdb_refseq[Properties] | | |
+|Eukaryotic Histone H4 | 1 | (Histone h4) AND "eukaryotes"[porgn:__txid2759] | | |
+|Eukaryotic p53 | 1 | (p53) AND "eukaryotes"[porgn:__txid2759] | | |
 | | 1 | (RpoB) AND "bacteria"[porgn:__txid2] AND srcdb_refseq[properties] | | |
 | | 1 | (beta lactamase) AND "bacteria"[porgn:__txid2] AND srcdb_swiss-prot[properties] | | |
 | | 1 | (RdRp) AND "viruses"[porgn:__txid10239] AND srcdb_refseq[properties] | | |
@@ -29,17 +29,6 @@ seqkit grep -r -n -i -p "histone h3" input.fasta | seqkit grep -r -n -p "\[*\]" 
 4. Take a n=50 subsample (replace filenames accordingly)
 ```bash
 seqtk sample -s100 output.fasta 50 > subset.fasta
-```
-
-### blastSeqtk.fasta 11/09
-1. Search in blastp for:
-
-`MARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRLVREIAQDFKTDLRFQSSAVMALQEACEAYLVGLFEDTNLCAIHAKRVTIMPKDIQLARRIRGERA`
-
-2. Show 100 results and download them
-3. Take a n=20 subsample (replace filenames accordingly)
-```bash
-seqtk sample -s100 all_hits.fasta 20 > subset.fasta
 ```
 
 ### 
