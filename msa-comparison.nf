@@ -35,13 +35,31 @@ params {
 
 workflow {
     main:
+    // input_ch = channel.fromList(params.inputs)
+    //     .map { entry ->
+    //         def parts = entry.split(':', 2)
+    //         def unaligned = parts[0]
+    //         def reference = parts.size() > 1 ? parts[1] : null
+    //         tuple(file(unaligned).simpleName, file(unaligned), reference ? file(reference) : null)
+    // }
     input_ch = channel.fromList(params.inputs)
-        .map { entry ->
+        .flatMap { entry ->
             def parts = entry.split(':', 2)
-            def unaligned = parts[0]
+            def inputPath = parts[0]
             def reference = parts.size() > 1 ? parts[1] : null
-            tuple(file(unaligned).simpleName, file(unaligned), reference ? file(reference) : null)
-    }
+            def target = file(inputPath)
+
+            if (target.isDirectory()) {
+                if (reference != null) {
+                    log.warn "Reference '${reference}' given alongside directory '${inputPath}' is ignored -- directory entries don't support a shared reference."
+                }
+                def matches = files("${inputPath}/*.fasta")
+                matches = matches instanceof List ? matches : [matches]
+                matches.collect { f -> tuple(f.simpleName, f, null) }
+            } else {
+                [ tuple(target.simpleName, target, reference ? file(reference) : null) ]
+            }
+        }
 
     //Each run is a tuple of (run_id, tool, options)
     run_ch = channel.fromList(params.runs)

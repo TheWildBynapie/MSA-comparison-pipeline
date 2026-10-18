@@ -122,3 +122,11 @@
 2026-10-18 08:33:22	1.9s	suspicious_babbage	ERR	021c196bcc64ccfc9cac833ee4936bec	11d5db71-9cb2-4435-af17-e04f6c0c94e6	nextflow msa-comparison-from-dir.nf -c fromdir.config
 2026-10-18 08:37:09	8.1s	romantic_cori	OK	0dabcbae81f7eeae0f64e46017f7691a	481e4e1c-6211-4b23-8145-01588f461cab	nextflow msa-comparison-from-dir.nf -c fromdir.config
 2026-10-18 08:43:51	2.6s	adoring_pauling	ERR	0dabcbae81f7eeae0f64e46017f7691a	b54fdcd6-2d4e-4264-b0c8-e922fa03eaa7	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile smallrun
+2026-10-18 11:18:58	9.1s	evil_bhabha	OK	f22459eec5965c9a22cc953067004e61	cc56cb02-06de-4b73-a838-c58e3d0e965c	nextflow msa-comparison.nf -profile smalldirectoryrun
+2026-10-18 11:29:09	2m 36s	elegant_sinoussi	ERR	34d367d505822454edaaedab9c5b4048	9dde09c8-4960-4ee7-8795-d8021b8c3b06	nextflow msa-comparison.nf -profile blast
+2026-10-18 11:43:05	7m 39s	ecstatic_magritte	OK	34d367d505822454edaaedab9c5b4048	3c1f119a-95d6-4693-bf0a-005b96d0c5da	nextflow msa-comparison.nf -profile blasthuman
+2026-10-18 11:50:46	8m 11s	sharp_nightingale	OK	34d367d505822454edaaedab9c5b4048	5ac59994-e329-4de2-a01a-f015f977c946	nextflow msa-comparison.nf -profile blastlamprey
+2026-10-18 11:58:59	4m 56s	angry_kay	OK	34d367d505822454edaaedab9c5b4048	24518bc7-2c5c-4ea5-a9e3-4e5415b6ce60	nextflow msa-comparison.nf -profile blastoctopus
+2026-10-18 12:03:57	4m 6s	compassionate_hamilton	ERR	34d367d505822454edaaedab9c5b4048	0bdf5029-dadb-42ea-811f-f12d06e21db8	nextflow msa-comparison.nf -profile blastrice
+2026-10-18 13:52:49	13m 7s	prickly_liskov	OK	34d367d505822454edaaedab9c5b4048	ea666b4b-6384-473c-95df-80d25a56b4a9	nextflow msa-comparison.nf -profile blastrice
+2026-10-18 14:05:58	8m 26s	ridiculous_varahamihira	OK	34d367d505822454edaaedab9c5b4048	80dc6e96-9916-4701-8d7d-3c2614f0cc8a	nextflow msa-comparison.nf -profile blastcorgl

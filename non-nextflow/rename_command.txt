@@ -1,0 +1,1 @@
+PERL5LIB= rename 's/blastp5000[^_]*//; s/_50seq//' *

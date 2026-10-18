@@ -1,8 +1,8 @@
 #!/bin/bash
 #./multipleRuns.sh
 
-nextflow msa-comparison.nf -profile mammals
-nextflow msa-comparison.nf -profile animals
-nextflow msa-comparison.nf -profile eukaryotes
-nextflow msa-comparison.nf -profile bacteria
-nextflow msa-comparison.nf -profile viruses
+#nextflow msa-comparison.nf -profile blasthuman
+#nextflow msa-comparison.nf -profile blastlamprey
+#nextflow msa-comparison.nf -profile blastoctopus
+nextflow msa-comparison.nf -profile blastrice
+nextflow msa-comparison.nf -profile blastcorgl
