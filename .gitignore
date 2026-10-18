@@ -4,3 +4,4 @@ data/
 work/
 results/
 .nextflow/cache/
+saved-results/

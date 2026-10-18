@@ -3,6 +3,7 @@ include { align } from './modules/aligners.nf'
 include { rustyMetal } from './modules/rusty-metal.nf'
 include { average_dpos } from './modules/average-dpos.nf'
 include { graphs } from './modules/graphing.nf'
+include { alistat_identity; average_identity } from './modules/alistat.nf'
 
 /*
 * Inputs: the .fasta files to be aligned, and have those alignments compared.
@@ -56,6 +57,13 @@ workflow {
     //Align everything
     align(combos)
 
+    //Compute %identity for every alignment align produced, then average per sample
+    alistat_identity(align.out.alignment)
+    identity_by_sample = alistat_identity.out
+        .map { sample_id, identity -> tuple(sample_id, identity.trim()) }
+        .groupTuple()
+    average_identity(identity_by_sample)
+
     //Build a (sample_id, 'reference', path) entry for every input that specified one
     reference_ch = input_ch
         .filter { sample_id, fasta, reference -> reference != null }
@@ -87,6 +95,7 @@ workflow {
     MDS          = graphs.out.MDS
     hierarchical = graphs.out.hierarchical
     summary      = graphs.out.summary
+    avgIdentity  = average_identity.out.output
 }
 
 output {
@@ -105,6 +114,10 @@ output {
         path 'MSA_graphs'
     }
     summary {
+        path 'MSA_graphs'
+        mode 'copy'
+    }
+    avgIdentity {
         path 'MSA_graphs'
         mode 'copy'
     }

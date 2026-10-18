@@ -2,11 +2,12 @@ import argparse
 import csv
 from Bio import SeqIO
 
-def filter_fasta_by_blast(csv_file, min_id, max_id, min_cov, max_cov, query_length):
+def filter_fasta_by_blast(csv_file, min_id, max_id, min_cov, max_cov, query_length, output_file=None):
     # Infer FASTA filename from CSV base name (e.g., "results.csv" -> "results.fasta")
     base_name = csv_file.rsplit('.', 1)[0]
     fasta_file = f"{base_name}.fasta"
-    output_file = f"{base_name}_filtered.fasta"
+    if output_file is None:
+        output_file = f"{base_name}_filtered.fasta"
 
     # 1. Collect valid accession IDs based on criteria
     valid_ids = set()
@@ -51,6 +52,7 @@ if __name__ == "__main__":
     parser.add_argument("-mic", "--min-cov", type=float, default=0.0, help="Minimum query coverage percentage (0-100)")
     parser.add_argument("-mac", "--max-cov", type=float, default=100.0, help="Maximum query coverage percentage (0-100)")
     parser.add_argument("-qlen", "--qlen", type=float, required=True, help="Query sequence length in amino acids/nucleotides")
+    parser.add_argument("-o", "--output", default=None, help="Output FASTA file name (optional)")
 
     args = parser.parse_args()
 
@@ -60,7 +62,8 @@ if __name__ == "__main__":
         max_id=args.max_id,
         min_cov=args.min_cov,
         max_cov=args.max_cov,
-        query_length=args.qlen
+        query_length=args.qlen,
+        output_file=args.output
     )
     
-#python non-nextflow/filter_fasta.py -i data/cox1/ricecox1blastp5000eukaOnly.csv -mid 50.0 -mad 60.0 -mic 50.0 -qlen 525
+#python non-nextflow/filter_fasta.py -i data/raw/lampreycox1blastp5000chordatesOnly.csv -mid 40.0 -mad 60.0 -mic 50.0 -qlen 518 -o data/cox1/lampreycox1blastp5000chordatesOnly_PID40to60.fasta
