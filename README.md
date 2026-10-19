@@ -29,7 +29,7 @@ Typical workflow:
 | ClustalW      |2.1|30/08/2026| 1994 | 2007 | at least this is latest anyway lol|
 | FAMSA2        |     |  | 2026 | 2026 | |
 | FSA           |1.15.9|11/09/2026| 2009 | 2009 |       |
-| Kalign        |3.4.0| not latest| 2005 | 2019 | need 3.5.1 as of 30/08/2026|
+| Kalign        |3.4.0| not latest| 2005 | 2019 | I should've got 3.5.1. Sorry I didn't |
 | MAFFT         |v7.526|30/08/2026| 2002 | 2013 | |
 | MUSCLE        |3.8| | 2004 | 2004 | |
 | Muscle5       |5.3.linux64|30/08/2026| 2021 | 2021 | |
