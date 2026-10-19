@@ -24,18 +24,17 @@ Typical workflow:
 | Name          | Version number | Latest version as of | Working | Notes |
 | ------------- | -------------- | ------------------------- | - |----- |
 | AMAP-align    |AMAP.2.2|30/08/2026|yes| |
+| Bali-Phy      | | | | |
 | Clustal Omega |1.0.3|not latest| yes | clustal.org hates me (I'm blocked and can't download a newer version)|
 | ClustalW      |2.1|30/08/2026|yes|at least this is latest anyway lol|
-| DIALIGN-TX    |                |                           |no|Needs a 'isDNAorProtein' detection method to be able to run automatically. Since a matrixfile must be specified|
+| FAMSA2        |     |  | | |
 | FSA           |1.15.9|11/09/2026|yes|       |
 | Kalign        |3.4.0|                           |yes|need 3.5.1 as of 30/08/2026|
 | MAFFT         |v7.526|30/08/2026|yes| |
-| MUSCLE        |5.3.linux64|30/08/2026|yes| |
-| PAGAN | | | yes | Ari is a legend for making it so easy to install. I'm using the docker container from her github |
-| POA           |                |                           |n/a|Same issue as dialign|
+| MUSCLE        |3.8| | yes | |
+| Muscle5       |5.3.linux64|30/08/2026|yes| |
 | PRANK         |v.250331|                           |yes| |
 | ProbCons      |1.12|30/08/2026|yes| |
-| PRODA         |1.0|                           |no|This program is weird and I'll sort it out later|
 | T-Coffee      |Version_13.46.0.919e8c6b|                           |yes| |
 
 ### Abandoned aligners
@@ -45,3 +44,7 @@ Typical workflow:
 | UPP2 | I could not install it despite trying for 2 hours. Those people really need to improve their software. |
 | MLProbs | same as UPP2. Genuinely disgusting handling of software, the readmes are so bad |
 | UPP | requires an older version of python that seems to be incompatible with its own dependencies... fascinating software :((( (Needs <=3.10 and pasta needs 3.13) |
+| Dialign-tx | requires a dna or protein matrix to run, and sorting this extra step out in time wasn't viable |
+| POA | same as dialign |
+| PAGAN | same as UPP2 |
+| PASTA | same as UPP2 |
