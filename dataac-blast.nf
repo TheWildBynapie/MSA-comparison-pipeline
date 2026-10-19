@@ -45,7 +45,7 @@ workflow {
 
     filtered_output = seqtk_sample.out
     .filter { fasta ->
-        fasta.readLines().count { it.startsWith('>') } >= params.minSeqCount
+        fasta.readLines().count { header -> header.startsWith('>') } >= params.minSeqCount
     }
 
     publish:

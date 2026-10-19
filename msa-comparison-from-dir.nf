@@ -27,7 +27,7 @@ workflow {
         matchingFiles.collect { f -> tuple(sampleId, f) } //f.name.replaceAll(/\.fasta$/, ''),
     }
 
-    msa_ch.view { entry -> "MSA entry: ${entry}" }
+    //msa_ch.view { entry -> "MSA entry: ${entry}" }
 
     //Regroup by sample_id, same shape rustyMetal already expects
     alignments_by_sample = msa_ch.groupTuple()
@@ -43,7 +43,7 @@ workflow {
 
     // Collect every replicate's CSV into one list for averaging
     replicate_csvs = rustyMetal.out.output
-        .map { sample_id, csv -> csv }
+        .map { _sample_id, csv -> csv }
         .collect()
 
     average_dpos(file('non-nextflow/average_dpos.py'), replicate_csvs)
@@ -55,6 +55,7 @@ workflow {
     publish:
     rustyMetal   = rustyMetal.output
     MDS          = graphs.out.MDS
+    MDS_nolines  = graphs.out.MDS_nolines
     hierarchical = graphs.out.hierarchical
     summary      = graphs.out.summary
     avgIdentity  = average_identity.out.output
@@ -65,6 +66,9 @@ output {
         path 'rusty-metal'
     }
     MDS {
+        path 'MSA_graphs'
+    }
+    MDS_nolines {
         path 'MSA_graphs'
     }
     hierarchical {

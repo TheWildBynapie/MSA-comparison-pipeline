@@ -35,13 +35,6 @@ params {
 
 workflow {
     main:
-    // input_ch = channel.fromList(params.inputs)
-    //     .map { entry ->
-    //         def parts = entry.split(':', 2)
-    //         def unaligned = parts[0]
-    //         def reference = parts.size() > 1 ? parts[1] : null
-    //         tuple(file(unaligned).simpleName, file(unaligned), reference ? file(reference) : null)
-    // }
     input_ch = channel.fromList(params.inputs)
         .flatMap { entry ->
             def parts = entry.split(':', 2)
@@ -111,6 +104,7 @@ workflow {
     aligners     = align.out.alignment
     rustyMetal   = rustyMetal.output
     MDS          = graphs.out.MDS
+    MDS_nolines  = graphs.out.MDS_nolines
     hierarchical = graphs.out.hierarchical
     summary      = graphs.out.summary
     avgIdentity  = average_identity.out.output
@@ -126,6 +120,9 @@ output {
     }
 
     MDS {
+        path 'MSA_graphs'
+    }
+    MDS_nolines {
         path 'MSA_graphs'
     }
     hierarchical {

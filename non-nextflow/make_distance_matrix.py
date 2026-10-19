@@ -90,7 +90,7 @@ if args.np_intermediate:
 
 #If doing everything in one go, do that
 else:
-    stress = mds.mds_and_plot(D, points, output_file=f"{output_dir}/MSA_distances.png")
+    stress = mds.mds_and_plot(D, points, output_file=f"{output_dir}/MSA_distances.png", output_file_nolines=f"{output_dir}/MSA_distances_nolines.png")
     hierarchical_clustering.hierarchical_and_plot(D, points, output_file=f"{output_dir}/MSA_hierarchical.png")
     write_summary(D, points, stress, output_file=f"{output_dir}/MSA_summary.txt")
     
