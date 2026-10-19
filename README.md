@@ -21,21 +21,21 @@ Typical workflow:
 
 
 # Aligner details
-| Name          | Version number | Latest version as of | Working | Notes |
-| ------------- | -------------- | ------------------------- | - |----- |
-| AMAP-align    |AMAP.2.2|30/08/2026|yes| |
-| Bali-Phy      | | | | |
-| Clustal Omega |1.0.3|not latest| yes | clustal.org hates me (I'm blocked and can't download a newer version)|
-| ClustalW      |2.1|30/08/2026|yes|at least this is latest anyway lol|
-| FAMSA2        |     |  | | |
-| FSA           |1.15.9|11/09/2026|yes|       |
-| Kalign        |3.4.0|                           |yes|need 3.5.1 as of 30/08/2026|
-| MAFFT         |v7.526|30/08/2026|yes| |
-| MUSCLE        |3.8| | yes | |
-| Muscle5       |5.3.linux64|30/08/2026|yes| |
-| PRANK         |v.250331|                           |yes| |
-| ProbCons      |1.12|30/08/2026|yes| |
-| T-Coffee      |Version_13.46.0.919e8c6b|                           |yes| |
+| Name          | Version number | Latest version as of | Latest major version release date (X.0) | original release date (1.0) | Notes |
+| ------------- | -------------- | ------------------------- | ---- | ---- | ----- |
+| AMAP-align    |AMAP.2.2|30/08/2026| 2014| 2008 | |
+| Bali-Phy      | | | 2006 | 2025 | |
+| Clustal Omega |1.0.3|not latest| 2011 | 2011 | clustal.org hates me (I'm blocked and can't download a newer version)|
+| ClustalW      |2.1|30/08/2026| 1994 | 2007 | at least this is latest anyway lol|
+| FAMSA2        |     |  | 2026 | 2026 | |
+| FSA           |1.15.9|11/09/2026| 2009 | 2009 |       |
+| Kalign        |3.4.0| not latest| 2005 | 2019 | need 3.5.1 as of 30/08/2026|
+| MAFFT         |v7.526|30/08/2026| 2002 | 2013 | |
+| MUSCLE        |3.8| | 2004 | 2004 | |
+| Muscle5       |5.3.linux64|30/08/2026| 2021 | 2021 | |
+| PRANK         |v.250331|                           | 2005 | 2017* |
+| ProbCons      |1.12|30/08/2026| 2005 | 2005 |  |
+| T-Coffee      |Version_13.46.0.919e8c6b| | 2000 | 2018 | |
 
 ### Abandoned aligners
 | Name          | Notes |
