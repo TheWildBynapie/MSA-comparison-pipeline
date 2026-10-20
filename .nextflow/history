@@ -68,3 +68,124 @@
 2026-10-15 10:55:18	3.2s	thirsty_hawking	ERR	c643bb544a58884277d644c42e7e2e07	4b3ab6d6-c331-48b2-95e0-38d040aef051	nextflow msa-comparison.nf -profile smallrun
 2026-10-15 10:56:23	2.8s	naughty_agnesi	ERR	c643bb544a58884277d644c42e7e2e07	743f8bfe-55c9-405a-a9bd-7c71a99508ab	nextflow msa-comparison.nf -profile smallrun
 2026-10-15 10:56:50	3s	disturbed_feynman	ERR	c643bb544a58884277d644c42e7e2e07	7ebfd8a3-6626-4033-a8ee-aa52e1666364	nextflow msa-comparison.nf -profile smallrun
+2026-10-15 12:00:02	3m 35s	backstabbing_lamarr	OK	c643bb544a58884277d644c42e7e2e07	4ec6af3e-fc46-4331-b8c5-af5909fca5fc	nextflow msa-comparison.nf -profile mammals
+2026-10-15 12:11:41	2m 50s	amazing_borg	OK	c643bb544a58884277d644c42e7e2e07	e12d3ae8-0372-4ae4-aa3f-06aaa6d81ba4	nextflow msa-comparison.nf -profile animals
+2026-10-15 17:26:18	2.4s	furious_wing	ERR	c38119aa826b83e89da61d637e8cbf66	c3a76177-d374-485b-86a5-08bc3ba1972d	nextflow data-acquisition.nf -config dataac.config -profile ricecox1
+2026-10-15 17:27:10	2s	distracted_carlsson	OK	c38119aa826b83e89da61d637e8cbf66	f12fbaa7-b4ce-4d87-ab0b-a27d89f03668	nextflow data-acquisition.nf -config dataac.config -profile ricecox1
+2026-10-15 18:30:32	1.8s	soggy_kirch	OK	c38119aa826b83e89da61d637e8cbf66	4490a59a-c301-4c0f-a703-192d4be4d93b	nextflow data-acquisition.nf -config dataac.config -profile ricecox1
+2026-10-15 18:33:13	1.2s	nauseous_turing	OK	c38119aa826b83e89da61d637e8cbf66	3c8706d7-6a78-44bf-8db5-fa975984b299	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 18:37:32	1.4s	condescending_brahmagupta	OK	c38119aa826b83e89da61d637e8cbf66	d7aee717-d255-4e42-b9b2-ef784e4b780c	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 18:40:15	1.2s	romantic_liskov	OK	c38119aa826b83e89da61d637e8cbf66	c5f72ed0-c399-4088-a530-3931781726ba	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 18:42:24	2.4s	jolly_gates	OK	c38119aa826b83e89da61d637e8cbf66	803d16a0-29ee-45ca-8782-7ff73d732466	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 18:43:25	2.3s	insane_stonebraker	OK	c38119aa826b83e89da61d637e8cbf66	4eeb08c9-713a-44f5-b82d-384f56a9523f	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 18:44:09	1.6s	peaceful_shirley	OK	c38119aa826b83e89da61d637e8cbf66	e247ef26-e79a-4a78-8652-5e147689cf23	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 19:10:59	2.7s	crazy_shaw	OK	c38119aa826b83e89da61d637e8cbf66	5c155588-0b96-4798-aebe-ad69cfdb433f	nextflow data-acquisition.nf -config dataac.config
+2026-10-15 19:11:26	1.2s	gigantic_lattes	OK	c38119aa826b83e89da61d637e8cbf66	90cd24f9-37be-443c-bd79-7f59f3f2267d	nextflow data-acquisition.nf -config dataac.config -profile cox1
+2026-10-15 22:30:57	3m 40s	thirsty_mcclintock	OK	c643bb544a58884277d644c42e7e2e07	a0027b49-0d76-4cd7-9055-119521a2ff26	nextflow msa-comparison.nf -profile mammals
+2026-10-15 22:34:39	2m 53s	sick_brattain	OK	c643bb544a58884277d644c42e7e2e07	571ec28f-f485-4015-81de-2d5514331543	nextflow msa-comparison.nf -profile animals
+2026-10-15 22:37:34	1m 32s	drunk_bhaskara	OK	c643bb544a58884277d644c42e7e2e07	13befcd1-8761-4db7-945a-b6c7b0d186e6	nextflow msa-comparison.nf -profile eukaryotes
+2026-10-15 22:39:08	3m 29s	confident_blackwell	ERR	c643bb544a58884277d644c42e7e2e07	c843ff8a-24c4-4b23-a188-a1d3bebda552	nextflow msa-comparison.nf -profile bacteria
+2026-10-15 22:51:31	3m 43s	intergalactic_swartz	OK	c643bb544a58884277d644c42e7e2e07	e0dc9901-1e7f-43e8-b230-53c709e1163c	nextflow msa-comparison.nf -profile eukaryotes
+2026-10-15 22:55:16	35m 20s	marvelous_minsky	OK	c643bb544a58884277d644c42e7e2e07	d5a27ccb-c485-4809-85ce-470c10c23abd	nextflow msa-comparison.nf -profile bacteria
+2026-10-15 23:30:38	7m 9s	exotic_galileo	ERR	c643bb544a58884277d644c42e7e2e07	5c58cc4d-5151-4b03-a499-721dd316f11d	nextflow msa-comparison.nf -profile viruses
+2026-10-16 08:11:25	4m 23s	kickass_coulomb	OK	c643bb544a58884277d644c42e7e2e07	0e1459a3-7a32-4f6b-afe8-c364cb4c9a08	nextflow msa-comparison.nf -profile mammals
+2026-10-16 08:15:49	2m 42s	naughty_ride	OK	c643bb544a58884277d644c42e7e2e07	b93d6273-899a-4bc0-a7ed-6f6971dc3721	nextflow msa-comparison.nf -profile animals
+2026-10-16 08:18:32	3m 38s	boring_nobel	OK	c643bb544a58884277d644c42e7e2e07	240fb333-fc5b-4c8f-938a-4356ba99a066	nextflow msa-comparison.nf -profile eukaryotes
+2026-10-16 08:22:12	6m 29s	maniac_perlman	ERR	c643bb544a58884277d644c42e7e2e07	d090648b-812e-40eb-81ad-fd1f875d0a44	nextflow msa-comparison.nf -profile viruses
+2026-10-16 08:49:08	6m 6s	determined_engelbart	ERR	c643bb544a58884277d644c42e7e2e07	27b781df-82cb-4ae2-a028-cab996fd5d0d	nextflow msa-comparison.nf -profile viruses
+2026-10-16 09:05:00	6m 4s	shrivelled_yonath	ERR	c643bb544a58884277d644c42e7e2e07	75053418-377f-439c-8bf4-d928c9af54bc	nextflow msa-comparison.nf -profile viruses
+2026-10-16 09:17:23	6m 52s	awesome_wilson	ERR	c643bb544a58884277d644c42e7e2e07	ff9f2049-7785-414a-92e6-8a16b7946133	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 10:15:57	6m	naughty_laplace	ERR	c643bb544a58884277d644c42e7e2e07	ccd1bb66-1f91-4203-b815-c514e4631bce	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 10:26:53	30.8s	crazy_einstein	ERR	c643bb544a58884277d644c42e7e2e07	c478b0be-4e2a-4d10-832a-92476ea6b5d8	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 10:28:28	22.7s	sick_albattani	ERR	c643bb544a58884277d644c42e7e2e07	22b1c87a-e92a-41f7-86eb-447660e5b8b8	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 10:29:40	4s	big_shannon	ERR	c643bb544a58884277d644c42e7e2e07	af30d863-d554-485f-91ea-643b85daa595	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 10:33:54	4.4s	irreverent_crick	ERR	c643bb544a58884277d644c42e7e2e07	dc6812b6-2d26-45cf-b491-9dfa2af31f22	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 13:12:14	5.7s	modest_lorenz	ERR	c643bb544a58884277d644c42e7e2e07	791f3e0d-f18f-4fe8-9817-91a2547e9e20	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-16 13:13:25	3.9s	extravagant_hoover	ERR	c643bb544a58884277d644c42e7e2e07	d3da22da-c71a-4b08-a66e-21e973c2e82d	nextflow msa-comparison.nf -profile viruses
+2026-10-16 13:22:11	1h 5m 17s	tender_lorenz	OK	c643bb544a58884277d644c42e7e2e07	42011774-fc99-4c12-b71e-09eee33fdd62	nextflow msa-comparison.nf -profile viruses -with-report -with-trace
+2026-10-17 13:49:58	2.1s	tender_gauss	ERR	e2ea37af8a30d83910a1e42330ba55b2	d5ad317e-3d85-4a21-936a-f511e484f457	nextflow dataac-blast.nf -c dataac-blast.config
+2026-10-17 13:51:03	3.1s	clever_elion	ERR	e2ea37af8a30d83910a1e42330ba55b2	d5ad317e-3d85-4a21-936a-f511e484f457	nextflow dataac-blast.nf -c dataac-blast.config -resume
+2026-10-17 13:52:42	8.6s	gloomy_fermi	OK	e2ea37af8a30d83910a1e42330ba55b2	d5ad317e-3d85-4a21-936a-f511e484f457	nextflow dataac-blast.nf -c dataac-blast.config -resume
+2026-10-17 14:02:19	1.9s	determined_tuckerman	OK	7a406020ed873a0975de0a2e735a0e0d	d5ad317e-3d85-4a21-936a-f511e484f457	nextflow dataac-blast.nf -c dataac-blast.config -resume
+2026-10-17 14:54:15	1.7s	confident_wegener	ERR	fc6aaebf74a6c6f85ce2331b99f7af46	2ed8e21e-e178-4d21-ab20-ab5d60486b69	nextflow msa-comparison.nf -profile smallrun
+2026-10-17 14:56:28	2.1s	disturbed_magritte	ERR	fc6aaebf74a6c6f85ce2331b99f7af46	6cb75c9e-3b16-4da8-beb8-37eadc55e270	nextflow msa-comparison.nf -profile smallrun
+2026-10-17 15:01:28	5.8s	tender_ochoa	OK	945e85866ff761962c46fcd8c6c7a9a5	279b4863-32b5-425d-8cd5-a7d9a6afe81a	nextflow msa-comparison.nf -profile smallrun
+2026-10-18 08:00:21	14.6s	grave_galileo	OK	945e85866ff761962c46fcd8c6c7a9a5	7c4dc3aa-c0f4-461b-b135-fe1d18f53c17	nextflow msa-comparison.nf
+2026-10-18 08:13:50	2.4s	exotic_tuckerman	OK	ab7bad4ed9ce333ba9a65ee5f1a64a4e	704103b6-0cf0-4a67-aad5-d59103ac2d38	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:16:20	2.2s	voluminous_cuvier	OK	8553e72d91a0b91807d64e3a62df85bf	0892471b-6b35-4128-8d62-64a11e596f74	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:18:48	-	golden_ride	-	a23fd48a1034cfa34fee53aa71816161	6e38d30a-dbed-4274-976f-8173ec57f302	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:19:28	-	gigantic_northcutt	-	3bd220cd01107ae216aac7788d066b6e	08d1f5fc-0b32-486e-b742-961f8897730d	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:25:17	2.6s	magical_wiles	OK	e24740418a53fc863dc9b6b827b7cb3f	88a5d0c5-c8e3-4991-99fa-92731610d58d	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:26:54	1.9s	cheesy_kirch	OK	9bb38ee966aa8b755a1b8aa2c2dffcdc	47ba1827-08d6-4c76-95fc-4cf3ffeacef2	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:27:15	2.1s	fervent_lalande	OK	9bb38ee966aa8b755a1b8aa2c2dffcdc	726fb795-7f1d-43d9-80dc-0dbb876ada4f	nextflow msa-comparison-from-dir.nf -config fromdir.config
+2026-10-18 08:29:10	2.7s	sharp_davinci	ERR	9bb38ee966aa8b755a1b8aa2c2dffcdc	9407aa9c-3511-4f46-b10f-19fecc7a6487	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:33:22	1.9s	suspicious_babbage	ERR	021c196bcc64ccfc9cac833ee4936bec	11d5db71-9cb2-4435-af17-e04f6c0c94e6	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:37:09	8.1s	romantic_cori	OK	0dabcbae81f7eeae0f64e46017f7691a	481e4e1c-6211-4b23-8145-01588f461cab	nextflow msa-comparison-from-dir.nf -c fromdir.config
+2026-10-18 08:43:51	2.6s	adoring_pauling	ERR	0dabcbae81f7eeae0f64e46017f7691a	b54fdcd6-2d4e-4264-b0c8-e922fa03eaa7	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile smallrun
+2026-10-18 11:18:58	9.1s	evil_bhabha	OK	f22459eec5965c9a22cc953067004e61	cc56cb02-06de-4b73-a838-c58e3d0e965c	nextflow msa-comparison.nf -profile smalldirectoryrun
+2026-10-18 11:29:09	2m 36s	elegant_sinoussi	ERR	34d367d505822454edaaedab9c5b4048	9dde09c8-4960-4ee7-8795-d8021b8c3b06	nextflow msa-comparison.nf -profile blast
+2026-10-18 11:43:05	7m 39s	ecstatic_magritte	OK	34d367d505822454edaaedab9c5b4048	3c1f119a-95d6-4693-bf0a-005b96d0c5da	nextflow msa-comparison.nf -profile blasthuman
+2026-10-18 11:50:46	8m 11s	sharp_nightingale	OK	34d367d505822454edaaedab9c5b4048	5ac59994-e329-4de2-a01a-f015f977c946	nextflow msa-comparison.nf -profile blastlamprey
+2026-10-18 11:58:59	4m 56s	angry_kay	OK	34d367d505822454edaaedab9c5b4048	24518bc7-2c5c-4ea5-a9e3-4e5415b6ce60	nextflow msa-comparison.nf -profile blastoctopus
+2026-10-18 12:03:57	4m 6s	compassionate_hamilton	ERR	34d367d505822454edaaedab9c5b4048	0bdf5029-dadb-42ea-811f-f12d06e21db8	nextflow msa-comparison.nf -profile blastrice
+2026-10-18 13:52:49	13m 7s	prickly_liskov	OK	34d367d505822454edaaedab9c5b4048	ea666b4b-6384-473c-95df-80d25a56b4a9	nextflow msa-comparison.nf -profile blastrice
+2026-10-18 14:05:58	8m 26s	ridiculous_varahamihira	OK	34d367d505822454edaaedab9c5b4048	80dc6e96-9916-4701-8d7d-3c2614f0cc8a	nextflow msa-comparison.nf -profile blastcorgl
+2026-10-18 16:50:36	6.4s	intergalactic_mendel	OK	0dabcbae81f7eeae0f64e46017f7691a	2a2702d0-1be7-4e9e-9173-4d8a6145eac8	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid39to50
+2026-10-18 16:50:44	6.5s	intergalactic_hilbert	OK	0dabcbae81f7eeae0f64e46017f7691a	01806439-fab1-406e-9a9a-96a7b0984b5d	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid50to60
+2026-10-18 16:50:52	11.4s	tender_kilby	OK	0dabcbae81f7eeae0f64e46017f7691a	387e10de-b0fe-403f-92ff-e223e1c2b787	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid60to70
+2026-10-18 16:51:05	7.9s	loving_tesla	OK	58fbb0580d503dcb94cfde6570ead40b	9463b80d-a6d5-49e5-8db2-33d976559820	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid70to80
+2026-10-18 17:45:50	6.6s	furious_jones	OK	34d367d505822454edaaedab9c5b4048	933f3caa-eae1-4459-b9cb-575f633ce84c	nextflow msa-comparison.nf -profile smallrun
+2026-10-18 17:47:16	5.4s	distracted_planck	ERR	01cfc8b6f43dd1cf5b59c43491a78367	d1be7d1c-d583-4e94-ac6e-68df9236a6bb	nextflow msa-comparison.nf -profile smallrun
+2026-10-18 17:48:53	6.1s	loquacious_cori	OK	01cfc8b6f43dd1cf5b59c43491a78367	d917bdb6-993b-408b-b06b-27615467dc81	nextflow msa-comparison.nf -profile smallrun
+2026-10-18 18:01:30	6.3s	silly_franklin	OK	5f8229c3c8a782b0aef933d87560867d	64758dbe-1947-46c4-a47f-6330e2b57dea	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid39to50
+2026-10-18 18:01:38	6.4s	pedantic_murdock	OK	5f8229c3c8a782b0aef933d87560867d	9209ad2f-5914-410c-a7fc-a10aedc67cfa	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid50to60
+2026-10-18 18:01:46	11s	modest_payne	OK	5f8229c3c8a782b0aef933d87560867d	60733605-a060-4029-892b-70d8e0a5b410	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid60to70
+2026-10-18 18:01:59	7.7s	mad_mandelbrot	OK	5f8229c3c8a782b0aef933d87560867d	781793ab-2b2a-40e6-89bc-a29be126fbec	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid70to80
+2026-10-18 18:12:05	7.5s	boring_rutherford	OK	5f8229c3c8a782b0aef933d87560867d	c3f36ad4-d13a-424f-b573-915eb9e880d3	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile human
+2026-10-18 18:12:14	7.7s	grave_joliot	OK	5f8229c3c8a782b0aef933d87560867d	76032dda-7791-4137-a81a-aa2e1031b9d0	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile lamprey
+2026-10-18 18:12:23	6.2s	big_bartik	OK	5f8229c3c8a782b0aef933d87560867d	e614a1ec-866e-4f79-8614-54e61b2f448c	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile octopus
+2026-10-18 18:12:30	6.4s	sleepy_lichterman	OK	5f8229c3c8a782b0aef933d87560867d	67a90993-1bcb-4769-9a32-eb8a39c048ac	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile rice
+2026-10-18 18:12:38	5.9s	spontaneous_gates	OK	5f8229c3c8a782b0aef933d87560867d	e542d066-f5d2-4389-99a2-8c83d5c8c915	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile corgl
+2026-10-18 18:42:13	8.4s	pedantic_ampere	OK	5f8229c3c8a782b0aef933d87560867d	f56f1e49-3e1f-46bc-be98-f54920356e18	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbimammal
+2026-10-18 18:42:23	5.1s	sad_easley	OK	5f8229c3c8a782b0aef933d87560867d	cdba9642-5146-454e-beba-c6450fc56865	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbianimal
+2026-10-18 18:42:30	5.4s	insane_pike	OK	5f8229c3c8a782b0aef933d87560867d	e3cfb0d6-c11b-4a86-bda4-abef336815b1	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbieuka
+2026-10-18 18:42:37	5.9s	pedantic_mercator	OK	5f8229c3c8a782b0aef933d87560867d	9f0bc840-7a10-4084-8647-59726794ad67	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbibacteria
+2026-10-18 18:42:44	38.4s	tender_kowalevski	OK	5f8229c3c8a782b0aef933d87560867d	6a0e299e-6e2e-45f6-aaf6-d668ef469140	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbivirus
+2026-10-18 19:00:01	8.6s	backstabbing_majorana	OK	5f8229c3c8a782b0aef933d87560867d	8dc11e4c-162e-43e2-96f9-ef9c5cf97d4b	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbimammal
+2026-10-18 19:00:11	5.7s	tiny_descartes	OK	5f8229c3c8a782b0aef933d87560867d	8c989e02-98e0-4d74-82b2-c57ddd64be19	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbianimal
+2026-10-18 19:00:18	6.2s	happy_bartik	OK	5f8229c3c8a782b0aef933d87560867d	3bd5f9a1-8ce8-4b78-a5e1-42f395f26ede	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbieuka
+2026-10-18 19:00:26	5.9s	adoring_raman	OK	5f8229c3c8a782b0aef933d87560867d	d9f30b4e-e436-49ff-8eef-5531ead807bc	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbibacteria
+2026-10-18 19:00:34	37.3s	distracted_hilbert	OK	5f8229c3c8a782b0aef933d87560867d	463e7516-78c3-4f5f-93af-de2a409eecbd	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbivirus
+2026-10-18 19:23:55	38.9s	stupefied_gauss	OK	5f8229c3c8a782b0aef933d87560867d	2bbe361b-4f89-409c-ba51-001b0a15e90c	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid0to20
+2026-10-18 19:24:36	6.1s	friendly_jennings	OK	5f8229c3c8a782b0aef933d87560867d	1d8e6991-da27-4bfb-b284-0800fc1e2fd7	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid20to40
+2026-10-18 19:24:44	8.8s	spontaneous_bhaskara	OK	5f8229c3c8a782b0aef933d87560867d	8d1695bf-bb0e-4ee2-be4c-e0d48c03ac31	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid40to60
+2026-10-18 19:24:54	5.9s	drunk_pesquet	OK	5f8229c3c8a782b0aef933d87560867d	3ac694c9-2dd5-4c48-b2c1-992ee7d13007	nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid60to100
+2026-10-19 14:31:08	3.6s	reverent_heyrovsky	ERR	c8c5867fe0600a7da9031b6a9183e4be	41beb75d-735a-4813-9dbd-587b357ce763	nextflow dataac-blast.nf -c dataac-blast.config
+2026-10-19 14:31:45	10s	magical_agnesi	OK	c8c5867fe0600a7da9031b6a9183e4be	8cd83338-22ef-47c2-802c-b66441941170	nextflow dataac-blast.nf -c dataac-blast.config
+2026-10-19 15:14:15	7s	agitated_mercator	OK	c38119aa826b83e89da61d637e8cbf66	3dd84ecc-e50a-4a19-a388-743c3b35e974	nextflow data-acquisition.nf -c dataac.config
+2026-10-19 17:41:55	2s	romantic_joliot	ERR	863285f097b6fda94c7db497c9784bf3	acb952d4-f669-436c-af86-22e145e05b4a	nextflow run py-version-check.nf
+2026-10-19 17:43:00	1.1s	wise_magritte	ERR	a81c218de5a90bfde2be0629cf0bb4c6	c2ce264e-506f-4dfb-820c-9144652a32bf	nextflow run py-version-check.nf
+2026-10-19 17:43:37	3s	gigantic_church	ERR	03ba7ba6c27711da79d3515a5e474662	2b9a2140-0bd7-4d29-b341-8f5dd80085ab	nextflow run py-version-check.nf
+2026-10-19 17:44:10	5.6s	focused_gilbert	OK	f922edb7bc98416131b782bd5f6b887c	c1cd8861-0842-4014-97ce-9562ae283d18	nextflow msa-comparison.nf -profile smallrun
+2026-10-19 17:44:57	3.1s	big_stonebraker	ERR	92dc9dde3f0084df316362a618cdc480	4c0212d5-3d14-41f3-b8b2-d0c07d0036cf	nextflow run py-version-check.nf
+2026-10-19 17:45:31	2.9s	kickass_carson	OK	92dc9dde3f0084df316362a618cdc480	0f15a675-2d7f-4b97-b7bd-4fd667341d2d	nextflow run py-version-check.nf
+2026-10-20 10:44:07	30.7s	confident_solvay	ERR	f922edb7bc98416131b782bd5f6b887c	5dc4bba8-b11e-4e06-8dc9-448f6cae4468	nextflow msa-comparison.nf -profile blasthuman mafft
+2026-10-20 10:44:40	8.4s	backstabbing_thompson	ERR	f922edb7bc98416131b782bd5f6b887c	ed8a7447-fe5a-4274-a7c5-6751466a36ec	nextflow msa-comparison.nf -profile blastlamprey mafft
+2026-10-20 10:46:21	4.4s	exotic_hawking	ERR	f922edb7bc98416131b782bd5f6b887c	887f95f3-7447-4669-8ca7-77f19398cd05	nextflow msa-comparison.nf -profile blasthuman,mafft
+2026-10-20 10:46:28	5s	disturbed_euler	ERR	f922edb7bc98416131b782bd5f6b887c	1b71bd9d-49b7-4bd5-9975-c6aff16425c6	nextflow msa-comparison.nf -profile blastlamprey,mafft
+2026-10-20 10:50:39	3m 46s	elegant_cuvier	OK	f922edb7bc98416131b782bd5f6b887c	9b45c6c9-4343-426c-b27f-85e9bd8411ed	nextflow msa-comparison.nf -profile blasthuman,mafft
+2026-10-20 10:54:27	4m 18s	mad_mirzakhani	OK	f922edb7bc98416131b782bd5f6b887c	677d0f8f-761d-492a-a9df-2af1de5f85b9	nextflow msa-comparison.nf -profile blastlamprey,mafft
+2026-10-20 11:38:16	1.9s	distracted_shannon	ERR	ed593f4dd7c806b5fc0a64eb41e15e15	1461fd7d-136d-4480-aee5-96758a1b30e4	nextflow data-acquisition.nf -c dataac.config -profile test
+2026-10-20 11:39:00	2.9s	silly_cori	ERR	ed593f4dd7c806b5fc0a64eb41e15e15	3c3be253-5b04-4d88-a709-27473475a217	nextflow data-acquisition.nf -c dataac.config -profile test
+2026-10-20 11:39:26	1.8s	scruffy_leakey	OK	13a5d837963ca1f500f96289061d091c	08bf24fa-e32e-491b-90ad-1684e7f48f96	nextflow data-acquisition.nf -c dataac.config -profile test
+2026-10-20 11:46:59	5.1s	mad_goldwasser	ERR	f922edb7bc98416131b782bd5f6b887c	b712538e-6999-4c3d-a9fb-4835f4235597	nextflow msa-comparison.nf -profile blasthuman,mafft
+2026-10-20 11:47:06	4.6s	evil_marconi	ERR	f922edb7bc98416131b782bd5f6b887c	aedb3494-929d-4be9-81ca-ac03858b85f1	nextflow msa-comparison.nf -profile blastlamprey,mafft
+2026-10-20 11:47:50	3m 45s	disturbed_escher	OK	f922edb7bc98416131b782bd5f6b887c	c5ca0e28-9ddc-470c-9a38-c7664225fdb6	nextflow msa-comparison.nf -profile blasthuman,mafft
+2026-10-20 11:51:37	4m 25s	wise_allen	OK	f922edb7bc98416131b782bd5f6b887c	fcd8d2d5-d0ab-4d53-b657-c29bd08a7cf3	nextflow msa-comparison.nf -profile blastlamprey,mafft
+2026-10-20 12:50:28	3m 46s	tender_williams	ERR	f922edb7bc98416131b782bd5f6b887c	810861b3-424f-41d0-b564-396b5eb0a397	nextflow msa-comparison.nf -profile blasthuman,clustalo
+2026-10-20 12:54:16	19.7s	jolly_blackwell	ERR	f922edb7bc98416131b782bd5f6b887c	780afec5-99fd-445c-95c1-52646add2bdc	nextflow msa-comparison.nf -profile blastlamprey,clustalo
+2026-10-20 12:55:37	3m 52s	mad_curie	OK	f922edb7bc98416131b782bd5f6b887c	3f8213ee-e435-47a8-bebe-3e35568a133a	nextflow msa-comparison.nf -profile blasthuman,clustalo
+2026-10-20 12:59:30	4m 31s	special_brazil	OK	f922edb7bc98416131b782bd5f6b887c	c346fa56-6812-4a15-85da-d0f1850d4268	nextflow msa-comparison.nf -profile blastlamprey,clustalo
+2026-10-20 13:15:14	13.1s	friendly_escher	OK	da8403f1c89cb6124e57fddee28563f1	598de0fa-f085-41d4-9626-aebf1e61936d	nextflow msa-comparison.nf -profile smallishrun
+2026-10-20 13:30:37	3m 40s	wise_ptolemy	OK	da8403f1c89cb6124e57fddee28563f1	c79c5a92-3080-47e3-8433-9527a2887de3	nextflow msa-comparison.nf -profile blasthuman,muscle
+2026-10-20 13:34:19	4m 14s	sleepy_gates	OK	da8403f1c89cb6124e57fddee28563f1	92d9e9eb-0e3d-4709-9f8a-fa8a77959853	nextflow msa-comparison.nf -profile blastlamprey,muscle

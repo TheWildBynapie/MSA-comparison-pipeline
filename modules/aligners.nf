@@ -7,7 +7,6 @@
 // }
 
 process align {
-    // container { tool in ['pagan', 'pasta'] ? getContainer(tool) : null }
 
     tag "${run_id}:${sample_id}:${tool}"
 
@@ -24,7 +23,7 @@ process align {
         mafft)    ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;
         muscle)   muscle ${options} ${sequences} -output ${sample_id}/${run_id}.fasta ;;
         kalign)   kalign ${options} -i ${sequences} -o ${sample_id}/${run_id}.fasta ;;
-        t_coffee) t_coffee ${sequences} -output=fasta -outfile=${sample_id}/${run_id}.fasta ${options} ;;
+        t_coffee) t_coffee ${options} ${sequences} -output=fasta -outfile=${sample_id}/${run_id}.fasta ;;
         probcons) probcons ${options} ${sequences} > ${sample_id}/${run_id}.fasta ;;
         clustalw) clustalw ${sequences} -output=fasta -outfile=${sample_id}/${run_id}.fasta ${options} ;;
         clustalo) clustalo -i ${sequences} -o ${sample_id}/${run_id}.fasta ${options} ;;

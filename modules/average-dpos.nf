@@ -6,7 +6,7 @@ process average_dpos {
     path csvs
 
     output:
-    tuple val("average"), path("rusty-metal-average.csv"), emit: output
+    tuple val("average-${workflow.profile}"), path("rusty-metal-average.csv"), emit: output
 
     script:
     """
