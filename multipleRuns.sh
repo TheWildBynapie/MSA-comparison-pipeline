@@ -15,7 +15,7 @@
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid39to50
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid50to60
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid60to70
-# nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid70to80
+# nextflow msa-comparison-from-dir.nf -c fromdir.config -profile pid70to82
 ###by taxa
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile human
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile lamprey
@@ -36,3 +36,16 @@
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid20to40
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid40to60
 # nextflow msa-comparison-from-dir.nf -c fromdir.config -profile ncbipid80to100
+
+# Runs for internal tool comparisons:
+##mafft
+#nextflow msa-comparison.nf -profile blasthuman,mafft
+#nextflow msa-comparison.nf -profile blastlamprey,mafft
+
+##clustalo
+#nextflow msa-comparison.nf -profile blasthuman,clustalo
+#nextflow msa-comparison.nf -profile blastlamprey,clustalo
+
+##clustalo
+nextflow msa-comparison.nf -profile blasthuman,muscle
+nextflow msa-comparison.nf -profile blastlamprey,muscle

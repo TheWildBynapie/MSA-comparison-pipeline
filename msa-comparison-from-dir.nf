@@ -12,6 +12,7 @@ include { alistat_identity; average_identity } from './modules/alistat.nf'
 */
 params {
     msaDirs: List<String> = ['testdata/existing_msas']
+    resultsDir: String = 'results'
 }
 
 workflow {
@@ -59,6 +60,14 @@ workflow {
     hierarchical = graphs.out.hierarchical
     summary      = graphs.out.summary
     avgIdentity  = average_identity.out.output
+
+    onComplete:
+    if (workflow.success) {
+        def cmd = "python3 ${projectDir}/non-nextflow/append_identity_to_names.py ${params.resultsDir}"
+        cmd.execute().waitForProcessOutput(System.out, System.err)
+    } else {
+        log.warn "Skipping append_identity_to_names.py -- workflow did not complete successfully."
+    }
 }
 
 output {

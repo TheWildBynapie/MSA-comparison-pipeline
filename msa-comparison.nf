@@ -13,6 +13,7 @@ include { alistat_identity; average_identity } from './modules/alistat.nf'
 */
 params {
     inputs: List<String> = ['testdata/test_gapless.fasta']
+    resultsDir: String = 'results'
     runs: List<String> = [
         /*Each line defines a run of a MSA tool.
         * Run names are arbitrary, but must be unique. They are used in the output file names.
@@ -63,7 +64,7 @@ workflow {
 
     // cross product: every (run, sample_id / fasta) combination
     combos = run_ch.combine(input_ch)
-        .map { run_id, tool, options, sample_id, fasta, reference -> tuple(run_id, tool, options, sample_id, fasta) }
+        .map { run_id, tool, options, sample_id, fasta, _reference -> tuple(run_id, tool, options, sample_id, fasta) }
 
     //Align everything
     align(combos)
@@ -77,8 +78,8 @@ workflow {
 
     //Build a (sample_id, 'reference', path) entry for every input that specified one
     reference_ch = input_ch
-        .filter { sample_id, fasta, reference -> reference != null }
-        .map { sample_id, fasta, reference -> tuple(sample_id, reference) }
+        .filter { _sample_id, _fasta, reference -> reference != null }
+        .map { sample_id, _fasta, reference -> tuple(sample_id, reference) }
 
     //Regroup alignments by the fasta file/sample_id
     alignments_by_sample = align.out.alignment
@@ -90,7 +91,7 @@ workflow {
 
     // Collect every replicate's CSV into one list for averaging
     replicate_csvs = rustyMetal.out.output
-        .map { sample_id, csv -> csv }
+        .map { _sample_id, csv -> csv }
         .collect()
 
     average_dpos(file('non-nextflow/average_dpos.py'), replicate_csvs)
@@ -108,6 +109,14 @@ workflow {
     hierarchical = graphs.out.hierarchical
     summary      = graphs.out.summary
     avgIdentity  = average_identity.out.output
+
+    onComplete:
+    if (workflow.success) {
+        def cmd = "python3 ${projectDir}/non-nextflow/append_identity_to_names.py ${params.resultsDir}"
+        cmd.execute().waitForProcessOutput(System.out, System.err)
+    } else {
+        log.warn "Skipping append_identity_to_names.py -- workflow did not complete successfully."
+    }
 }
 
 output {

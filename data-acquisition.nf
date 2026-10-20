@@ -20,7 +20,7 @@ workflow {
         .map { entry ->
             def (path, searchTerm) = entry.split(':', 2)
             tuple(file(path), searchTerm)
-        }.view()
+        }
 
     seqkit_grep(input_ch)
     seqtk_sample(seqkit_grep.out, params.sampleSize)
@@ -65,11 +65,11 @@ process seqtk_sample {
     val sampleSize
 
     output:
-    path "${fasta.baseName}_${sampleSize}seq.fasta"
+    path "${fasta.baseName}.fasta"
 
     script:
     """
-    seqtk sample -s100 ${fasta} ${sampleSize} > ${fasta.baseName}_${sampleSize}seq.fasta
+    seqtk sample -s100 ${fasta} ${sampleSize} > ${fasta.baseName}.fasta
     """
 }
 
