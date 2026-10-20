@@ -23,7 +23,7 @@ Typical workflow:
 # Aligner details
 | Name          | Version number | Latest version as of | original release date (1.0) | Latest major version release date (X.0) | Notes |
 | ------------- | -------------- | ------------------------- | ---- | ---- | ----- |
-| AMAP-align    |AMAP.2.2|30/08/2026| 2014| 2008 | |
+| AMAP-align    |AMAP.2.2|30/08/2026| 2008 | 2014 | |
 | Bali-Phy      | | | 2006 | 2025 | |
 | Clustal Omega |1.0.3|not latest| 2011 | 2011 | clustal.org hates me (I'm blocked and can't download a newer version)|
 | ClustalW      |2.1|30/08/2026| 1994 | 2007 | at least this is latest anyway lol|
