@@ -21,7 +21,7 @@ Typical workflow:
 
 
 # Aligner details
-| Name          | Version number | Latest version as of | Latest major version release date (X.0) | original release date (1.0) | Notes |
+| Name          | Version number | Latest version as of | original release date (1.0) | Latest major version release date (X.0) | Notes |
 | ------------- | -------------- | ------------------------- | ---- | ---- | ----- |
 | AMAP-align    |AMAP.2.2|30/08/2026| 2014| 2008 | |
 | Bali-Phy      | | | 2006 | 2025 | |
